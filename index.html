@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2005 + 2007 Jeanie Lane · Gilroy, California</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f1a14;
+  --ink-soft:#3d362d;
+  --paper:#f5efe2;
+  --paper-warm:#ebe1cc;
+  --paper-deep:#dccfb1;
+  --terra:#a4502a;
+  --terra-deep:#7a3318;
+  --olive:#525a2c;
+  --gold:#b48a3c;
+  --line:rgba(31,26,20,.14);
+  --rule:rgba(31,26,20,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+
+/* type */
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:400}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--terra-deep)}
+
+/* layout */
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+.rule{border-top:1px solid var(--rule)}
+section{padding:96px 0;position:relative}
+.section-label{display:grid;grid-template-columns:auto minmax(auto,1fr) minmax(360px,1.1fr);gap:32px 56px;align-items:baseline;margin-bottom:56px}
+.section-label .num-tag{font-family:'Fraunces',serif;font-size:14px;color:var(--terra-deep);letter-spacing:.04em}
+.section-label h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(38px,5vw,64px);line-height:1.05;letter-spacing:-.022em}
+.section-label .lede{font-size:15.5px;color:var(--ink-soft);line-height:1.6;max-width:44ch;align-self:end;padding-bottom:8px;justify-self:start}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:50;background:rgba(245,239,226,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+nav.top .inner{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1280px;margin:0 auto}
+nav.top .brand{font-family:'Fraunces',serif;font-size:18px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+nav.top .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--terra)}
+nav.top ul{display:flex;gap:32px;list-style:none;font-size:13px;letter-spacing:.04em}
+nav.top ul a{color:var(--ink-soft);transition:color .2s}
+nav.top ul a:hover{color:var(--terra-deep)}
+nav.top .cta{font-size:13px;padding:10px 18px;background:var(--ink);color:var(--paper);border-radius:999px;letter-spacing:.04em;font-weight:500}
+
+/* hero — full-bleed, type in the sky's negative space */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;overflow:hidden;color:#fff}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+/* subtle vignette top-left (where the title lives) + bottom (where meta lives) — keep house area untouched */
+.hero-bg::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 75% 55% at 35% 20%,rgba(31,26,20,.45) 0%,rgba(31,26,20,0) 70%);pointer-events:none}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(31,26,20,0) 55%,rgba(31,26,20,.7) 100%);pointer-events:none}
+.hero-top{position:relative;z-index:3;padding:24px 40px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.85);max-width:1440px;margin:0 auto;width:100%}
+.hero-top span:first-child{color:#e8c98f;font-weight:500}
+.hero-title-area{position:relative;z-index:2;padding:48px 40px 0;max-width:1440px;margin:0 auto;width:100%;flex:1;display:flex;align-items:flex-start}
+.hero-title-area h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,5.4vw,88px);line-height:1;letter-spacing:-.03em;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.3)}
+.hero-title-area h1 em{font-style:italic;color:#e8c98f;font-weight:300}
+.hero-bottom{position:relative;z-index:2;padding:48px 40px;max-width:1440px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:end}
+.hero-bottom .sub{font-size:17px;line-height:1.6;color:rgba(255,255,255,.92);max-width:46ch;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+.hero-bottom .addr{text-align:right;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.72);line-height:2;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.hero-bottom .addr strong{display:block;color:#fff;font-family:'Fraunces',serif;font-size:20px;font-weight:400;letter-spacing:-.005em;text-transform:none;margin-bottom:4px}
+
+/* stat strip below hero */
+.stat-strip{display:grid;grid-template-columns:repeat(5,1fr);background:var(--ink);color:var(--paper)}
+.stat-strip > div{padding:32px 24px;border-right:1px solid rgba(245,239,226,.1)}
+.stat-strip > div:last-child{border-right:none}
+.stat-strip .v{font-family:'Fraunces',serif;font-size:34px;font-weight:300;letter-spacing:-.02em;line-height:1;display:block;margin-bottom:10px}
+.stat-strip .v sup{font-size:16px;color:var(--gold);vertical-align:super;margin-right:1px}
+.stat-strip .l{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,239,226,.6)}
+
+/* about — editorial waterfall: lede → fact strip → multi-col prose */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.about-lede{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(24px,2.4vw,32px);line-height:1.35;letter-spacing:-.012em;color:var(--ink);max-width:60ch;margin-bottom:48px}
+.about-lede::first-letter{font-family:'Fraunces',serif;font-size:84px;float:left;line-height:.85;padding:10px 16px 0 0;color:var(--terra-deep);font-weight:400}
+.about-lede em{font-style:italic;color:var(--terra-deep)}
+.about-prose{column-count:2;column-gap:56px;margin-top:36px}
+.about-prose p{font-size:16px;line-height:1.7;color:var(--ink-soft);margin-bottom:1.1em;break-inside:avoid}
+.about-prose p strong{color:var(--ink);font-weight:500}
+.feature-list{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 36px;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.feature-list .it{display:flex;flex-direction:column;gap:6px}
+.feature-list .it .lbl{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--terra-deep);font-weight:500}
+.feature-list .it .vl{font-family:'Fraunces',serif;font-size:20px;font-weight:400;line-height:1.25;letter-spacing:-.005em}
+
+/* the four highlights — distinctive features */
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:72px}
+.highlight{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;grid-template-rows:200px 1fr}
+.highlight .img{overflow:hidden;background:var(--paper-warm)}
+.highlight .img img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.highlight:hover .img img{transform:scale(1.04)}
+.highlight .body{padding:22px 22px 24px}
+.highlight .tag{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:10px}
+.highlight h3{font-family:'Fraunces',serif;font-size:22px;font-weight:400;letter-spacing:-.01em;line-height:1.18;margin-bottom:10px}
+.highlight p{font-size:13.5px;color:var(--ink-soft);line-height:1.55}
+
+/* gallery — masonry */
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:120px;gap:10px}
+.gallery .g{overflow:hidden;border-radius:3px;background:var(--paper-warm);position:relative;cursor:pointer}
+.gallery .g img{width:100%;height:100%;object-fit:cover;transition:transform .8s,filter .3s}
+.gallery .g:hover img{transform:scale(1.03)}
+.gallery .g .cap{position:absolute;bottom:14px;left:16px;color:#fff;font-family:'Fraunces',serif;font-size:14px;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.6);opacity:0;transform:translateY(6px);transition:.3s}
+.gallery .g:hover .cap{opacity:1;transform:translateY(0)}
+.gallery .g::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 40%);opacity:0;transition:.3s}
+.gallery .g:hover::after{opacity:1}
+.g-r3{grid-row:span 3}.g-r2{grid-row:span 2}.g-r4{grid-row:span 4}
+.g-c2{grid-column:span 2}.g-c3{grid-column:span 3}.g-c4{grid-column:span 4}.g-c5{grid-column:span 5}.g-c6{grid-column:span 6}.g-c7{grid-column:span 7}.g-c8{grid-column:span 8}
+
+/* income */
+.income-section{padding:120px 0}
+.bignum-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:48px}
+.bignum-grid > div{background:var(--paper);padding:36px 28px}
+.bignum-grid .l{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+.bignum-grid .v{font-family:'Fraunces',serif;font-size:48px;font-weight:300;letter-spacing:-.022em;line-height:1;color:var(--ink)}
+.bignum-grid .v sup{font-size:18px;color:var(--terra);margin-right:2px;vertical-align:top}
+.bignum-grid .sub{font-size:12px;color:var(--ink-soft);margin-top:10px;line-height:1.5}
+
+.chart-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:32px;margin-bottom:24px}
+.chart-card h3{font-family:'Fraunces',serif;font-weight:400;font-size:24px;margin-bottom:6px}
+.chart-card .sub{color:var(--ink-soft);font-size:13px;margin-bottom:28px}
+
+.chart-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:24px}
+
+/* 2007 cottage section — contrasting character */
+.cottage-section{background:var(--paper-warm);padding:120px 0}
+.cottage-intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:56px;align-items:end}
+.cottage-intro .num-tag{font-family:'Fraunces',serif;font-size:14px;letter-spacing:.04em;color:var(--terra-deep);margin-bottom:14px;display:block}
+.cottage-intro h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(40px,5.2vw,68px);line-height:1.04;letter-spacing:-.025em;max-width:14ch}
+.cottage-intro h2 em{font-style:italic;color:var(--terra-deep)}
+.cottage-intro .lede{font-size:17px;line-height:1.65;color:var(--ink-soft);max-width:46ch}
+.cottage-intro .lede strong{color:var(--ink);font-weight:500}
+
+.cottage-grid{display:grid;grid-template-columns:7fr 5fr;grid-template-rows:1fr 1fr;gap:14px;height:680px}
+.cottage-grid .cg{overflow:hidden;border-radius:4px;background:var(--paper);position:relative;cursor:pointer}
+.cottage-grid .cg img{width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.cottage-grid .cg:hover img{transform:scale(1.04)}
+.cottage-grid .cg .cap{position:absolute;bottom:14px;left:18px;color:#fff;font-family:'Fraunces',serif;font-size:14px;letter-spacing:.01em;text-shadow:0 2px 12px rgba(0,0,0,.6);opacity:0;transform:translateY(6px);transition:.3s}
+.cottage-grid .cg:hover .cap{opacity:1;transform:translateY(0)}
+.cottage-grid .cg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55) 0%,transparent 40%);opacity:0;transition:.3s}
+.cottage-grid .cg:hover::after{opacity:1}
+.cg-big{grid-row:1/3}
+
+.cottage-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.cottage-stats > div{padding:24px 26px;border-right:1px solid var(--line)}
+.cottage-stats > div:last-child{border-right:none}
+.cottage-stats .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px}
+.cottage-stats .vl{font-family:'Fraunces',serif;font-size:24px;font-weight:400;letter-spacing:-.01em;line-height:1.15}
+.cottage-stats .sub{font-size:11px;color:var(--ink-soft);margin-top:4px}
+
+/* possibilities — three pillars over images */
+.poss-section{background:var(--ink);color:var(--paper);padding:0;overflow:hidden}
+.poss-intro{padding:120px 40px 64px;max-width:1280px;margin:0 auto}
+.poss-intro .num-tag{font-family:'Fraunces',serif;color:var(--gold);font-size:14px;letter-spacing:.04em;margin-bottom:18px;display:block}
+.poss-intro h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,5.6vw,76px);line-height:1.02;letter-spacing:-.025em;max-width:18ch;color:#fff;margin-bottom:24px}
+.poss-intro h2 em{font-style:italic;color:#e8c98f}
+.poss-intro p{color:rgba(245,239,226,.7);font-size:18px;line-height:1.65;max-width:54ch}
+
+.poss-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid rgba(245,239,226,.12)}
+.poss-cell{display:flex;flex-direction:column;border-right:1px solid rgba(245,239,226,.12);background:var(--ink)}
+.poss-cell:last-child{border-right:none}
+.poss-cell .photo{position:relative;aspect-ratio:4/5;overflow:hidden;background:#26201a}
+.poss-cell .photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.poss-cell:hover .photo img{transform:scale(1.04)}
+.poss-cell .body{padding:40px 36px 48px;display:flex;flex-direction:column;flex:1}
+.poss-cell .tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#e8c98f;margin-bottom:14px;font-weight:500}
+.poss-cell h3{font-family:'Fraunces',serif;font-size:30px;font-weight:400;line-height:1.1;letter-spacing:-.018em;margin-bottom:16px;color:#fff}
+.poss-cell h3 em{font-style:italic;color:#e8c98f}
+.poss-cell p{font-size:14.5px;color:rgba(245,239,226,.72);line-height:1.65;max-width:38ch;margin-bottom:auto}
+.poss-cell ul{list-style:none;margin-top:24px;padding:20px 0 0;border-top:1px solid rgba(245,239,226,.18)}
+.poss-cell ul li{display:flex;justify-content:space-between;padding:7px 0;font-size:13px;color:rgba(245,239,226,.65)}
+.poss-cell ul li strong{font-family:'Fraunces',serif;color:#fff;font-weight:400;font-size:15px}
+
+/* land-value section — investor-grade facts */
+.land-section{background:var(--paper-warm);padding:120px 0;position:relative}
+.land-section .lede-row{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;margin-bottom:64px;align-items:end}
+.land-section .lede-row p{font-size:17px;line-height:1.7;color:var(--ink-soft);max-width:48ch}
+.land-section .lede-row p strong{color:var(--ink);font-weight:500}
+
+.land-facts{display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.land-facts > div{padding:36px 30px;border-right:1px solid var(--line);position:relative;display:flex;flex-direction:column;gap:14px}
+.land-facts > div:last-child{border-right:none}
+.land-facts .lbl{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--terra-deep);font-weight:600}
+.land-facts .v{font-family:'Fraunces',serif;font-size:38px;font-weight:300;letter-spacing:-.025em;line-height:1;color:var(--ink)}
+.land-facts .v sup{font-size:14px;color:var(--terra);vertical-align:top;margin-left:3px}
+.land-facts .vsub{font-family:'Fraunces',serif;font-size:15px;color:var(--ink);font-weight:400;line-height:1.3;margin-top:-6px}
+.land-facts .desc{font-size:13px;color:var(--ink-soft);line-height:1.55;margin-top:auto;padding-top:14px;border-top:1px solid var(--rule)}
+
+/* location — tighter editorial layout */
+.loc-hero{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:stretch;margin-bottom:40px}
+.loc-hero .img-wrap{position:relative;border-radius:6px;overflow:hidden;background:var(--paper-warm);min-height:340px}
+.loc-hero .img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;position:absolute;inset:0}
+.loc-hero .img-wrap .tag{position:absolute;bottom:18px;left:18px;background:rgba(31,26,20,.78);backdrop-filter:blur(6px);color:#fff;padding:8px 14px;border-radius:99px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.loc-hero .blurb{display:flex;flex-direction:column;justify-content:space-between;gap:24px;padding:8px 0}
+.loc-hero .blurb h3{font-family:'Fraunces',serif;font-weight:400;font-size:24px;line-height:1.25;letter-spacing:-.012em;color:var(--ink)}
+.loc-hero .blurb p{font-size:15px;line-height:1.65;color:var(--ink-soft)}
+.loc-hero .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.4)}
+.loc-hero .mini-stats > div{padding:14px 16px;border-right:1px solid var(--line)}
+.loc-hero .mini-stats > div:last-child{border-right:none}
+.loc-hero .mini-stats .l{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px}
+.loc-hero .mini-stats .v{font-family:'Fraunces',serif;font-size:18px;font-weight:400;letter-spacing:-.005em}
+
+.loc-grid-title{font-family:'Fraunces',serif;font-size:18px;font-weight:400;letter-spacing:-.005em;color:var(--ink-soft);margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.loc-grid-title strong{color:var(--ink);font-weight:400}
+
+.loc-poi{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.loc-poi .poi{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--rule)}
+.loc-poi .poi:nth-last-child(-n+2){border-bottom:none}
+.loc-poi .poi .icon{width:26px;height:26px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:12px;color:var(--terra-deep)}
+.loc-poi .poi .name{font-family:'Fraunces',serif;font-size:17px;font-weight:400;line-height:1.2}
+.loc-poi .poi .name span{display:block;font-family:'Inter',sans-serif;font-size:11.5px;color:var(--ink-soft);margin-top:2px;font-weight:400;letter-spacing:0;line-height:1.4}
+.loc-poi .poi .dist{font-family:'Fraunces',serif;font-size:15px;color:var(--terra-deep);font-variant-numeric:tabular-nums;font-weight:400}
+
+/* thesis */
+.thesis-section{background:var(--paper-warm);padding:120px 0}
+.thesis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.thesis-card{background:var(--paper);padding:36px 32px;border-radius:6px;border:1px solid var(--line);position:relative;overflow:hidden}
+.thesis-card .badge{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-deep);margin-bottom:18px;padding:5px 12px;background:rgba(164,80,42,.08);border-radius:99px;font-weight:500}
+.thesis-card h4{font-family:'Fraunces',serif;font-size:26px;font-weight:400;line-height:1.15;letter-spacing:-.01em;margin-bottom:14px}
+.thesis-card p{font-size:14.5px;color:var(--ink-soft);line-height:1.65}
+
+/* CTA */
+.cta-section{position:relative;padding:0;color:#fff;overflow:hidden;min-height:560px;display:flex;align-items:center}
+.cta-bg{position:absolute;inset:0;z-index:0}
+.cta-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.cta-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(31,26,20,.78),rgba(31,26,20,.55))}
+.cta-content{position:relative;z-index:2;width:100%;text-align:center;padding:120px 32px}
+.cta-content h2{font-family:'Fraunces',serif;font-size:clamp(48px,7vw,84px);font-weight:300;letter-spacing:-.025em;line-height:1.05;margin:0 auto 24px;max-width:18ch;color:#fff}
+.cta-content h2 em{font-style:italic;color:#e8c98f}
+.cta-content p{font-size:18px;color:rgba(255,255,255,.8);max-width:52ch;margin:0 auto 40px;line-height:1.6}
+.cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-contacts{display:flex;gap:64px;justify-content:center;flex-wrap:wrap;margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,.18)}
+.cta-contacts .contact{text-align:center;color:#fff}
+.cta-contacts .contact .name{font-family:'Fraunces',serif;font-size:22px;font-weight:400;letter-spacing:-.005em;margin-bottom:14px;color:#fff}
+.cta-contacts .contact .line{display:block;font-size:14px;color:rgba(255,255,255,.78);line-height:1.9;letter-spacing:.02em;transition:color .2s}
+.cta-contacts .contact .line:hover{color:#e8c98f}
+.btn{padding:16px 28px;border-radius:999px;font-size:14px;letter-spacing:.04em;font-weight:500;cursor:pointer;border:none;transition:all .2s;display:inline-block}
+.btn-primary{background:#fff;color:var(--ink)}
+.btn-primary:hover{background:#e8c98f}
+.btn-secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+.btn-secondary:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+/* footer */
+footer{background:var(--ink);color:var(--paper);padding:60px 0 36px}
+footer .inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px}
+footer .brand{font-family:'Fraunces',serif;font-size:24px;line-height:1.3}
+footer .brand em{font-style:italic;color:#e8c98f}
+footer .meta{font-size:13px;color:rgba(245,239,226,.55);line-height:1.7}
+footer .contact-block{margin-top:16px;line-height:1.85}
+footer .contact-block:first-of-type{margin-top:14px}
+footer .meta strong{color:var(--paper);font-weight:500;letter-spacing:.02em}
+footer .legal{font-size:11px;color:rgba(245,239,226,.4);margin-top:48px;border-top:1px solid rgba(245,239,226,.1);padding-top:24px;letter-spacing:.04em}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(20,16,12,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:32px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:88vh;object-fit:contain;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lightbox .close{position:absolute;top:24px;right:32px;color:#fff;font-size:24px;cursor:pointer;font-family:'Fraunces',serif;font-weight:300}
+
+@media (max-width:900px){
+  .wrap{padding:0 20px}
+  nav.top ul{display:none}
+  section{padding:64px 0}
+  .hero{min-height:100vh}
+  .hero-top{padding:18px 20px;flex-direction:column;align-items:flex-start;gap:6px}
+  .hero-title-area{padding:32px 20px 0}
+  .hero-title-area h1{font-size:clamp(40px,10vw,68px);max-width:none}
+  .hero-bottom{padding:32px 20px;grid-template-columns:1fr;gap:24px}
+  .hero-bottom .addr{text-align:left}
+  .section-label{grid-template-columns:1fr;gap:16px;margin-bottom:36px}
+  .stat-strip{grid-template-columns:repeat(2,1fr)}
+  .stat-strip > div:nth-child(2n){border-right:none}
+  .stat-strip > div{border-bottom:1px solid rgba(245,239,226,.1)}
+  .two-col,.chart-grid,.loc-hero{grid-template-columns:1fr;gap:32px}
+  .feature-list{grid-template-columns:repeat(2,1fr);gap:20px 24px}
+  .about-prose{column-count:1}
+  .about-lede{font-size:20px;margin-bottom:32px}
+  .loc-hero .img-wrap{min-height:240px;aspect-ratio:4/3}
+  .loc-poi{grid-template-columns:1fr}
+  .loc-poi .poi:nth-last-child(-n+2){border-bottom:1px solid var(--rule)}
+  .loc-poi .poi:last-child{border-bottom:none}
+  .bignum-grid{grid-template-columns:repeat(2,1fr)}
+  .thesis-grid{grid-template-columns:1fr}
+  .highlights{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(6,1fr);grid-auto-rows:110px}
+  .gallery .g{grid-column:span 6 !important;grid-row:span 2 !important}
+  .book-grid{grid-template-columns:1fr}
+  .poss-intro{padding:80px 20px 40px}
+  .poss-row{grid-template-columns:1fr}
+  .poss-cell{border-right:none;border-bottom:1px solid rgba(245,239,226,.12);min-height:480px}
+  .poss-cell:last-child{border-bottom:none}
+  .poss-cell .body{padding:36px 24px}
+  footer .inner{grid-template-columns:1fr;gap:32px}
+}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="inner">
+    <div class="brand"><span class="dot"></span> Jeanie Lane Estate</div>
+    <ul>
+      <li><a href="#property">The Property</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#possibilities">Possibilities</a></li>
+      <li><a href="#income">Income</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <a href="#tour" class="cta">Schedule a tour</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"><img src="assets/photos/01-exterior-front.jpg" alt="2005 + 2007 Jeanie Lane front exterior"></div>
+  <div class="hero-top">
+    <span>Off-Market Preview · Listing #JL-2026</span>
+    <span>Santa Clara County, California</span>
+  </div>
+  <div class="hero-title-area">
+    <h1>A Craftsman estate in<br><em>wine country.</em></h1>
+  </div>
+  <div class="hero-bottom">
+    <p class="sub">
+      Two homes, a private vineyard, and a wedding-ready lawn — twenty months of proven
+      short-stay revenue on 4.59 acres of flat, unincorporated land north of Gilroy.
+    </p>
+    <div class="addr">
+      <strong>2005 + 2007 Jeanie Lane</strong>
+      Gilroy · California · 95020
+    </div>
+  </div>
+</header>
+
+<!-- stat strip -->
+<div class="stat-strip">
+  <div><span class="v"><sup>$</sup>237,829</span><span class="l">Gross revenue · life-to-date</span></div>
+  <div><span class="v"><sup>$</sup>18,663</span><span class="l">June 2026 alone</span></div>
+  <div><span class="v">95+</span><span class="l">Reservations</span></div>
+  <div><span class="v"><sup>$</sup>1,113</span><span class="l">Average daily rate</span></div>
+  <div><span class="v">85+</span><span class="l">Unique guests</span></div>
+</div>
+
+<!-- PROPERTY -->
+<section id="property">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num-tag">01</span>
+      <h2>An estate that<br>actually earns its keep.</h2>
+      <p class="lede"><strong>4.59 unincorporated acres</strong> in the San Martin area —
+      county jurisdiction, no city. Two separately-addressed Craftsman residences (2005 and
+      2007 Jeanie Lane), both <strong>fully permitted by Santa Clara County</strong>, plus
+      a working Zinfandel vineyard and a private water well on-site.</p>
+    </div>
+
+    <!-- editorial lede -->
+    <p class="about-lede">
+      <em>Imagine pushing open hand-crafted antique doors</em> and stepping into a two-story
+      library that pulls morning light through clerestory windows onto warm hardwood floors —
+      a 2010 home with the soul of a much older one.
+    </p>
+
+    <!-- fact strip -->
+    <div class="feature-list">
+      <div class="it"><span class="lbl">Lot size</span><span class="vl">4.59 acres<br>all flat</span></div>
+      <div class="it"><span class="lbl">Jurisdiction</span><span class="vl">Unincorporated<br>Santa Clara County</span></div>
+      <div class="it"><span class="lbl">Permit status</span><span class="vl">Both homes<br>county-permitted</span></div>
+      <div class="it"><span class="lbl">Zoning</span><span class="vl">Rural Residential<br>SB9-eligible</span></div>
+      <div class="it"><span class="lbl">Water</span><span class="vl">Private well<br>on-site</span></div>
+      <div class="it"><span class="lbl">Addresses</span><span class="vl">2005 + 2007<br>Jeanie Ln</span></div>
+      <div class="it"><span class="lbl">Main house</span><span class="vl">~6,000 sqft<br>6 BR / 7+2 BA</span></div>
+      <div class="it"><span class="lbl">2007 second home</span><span class="vl">1,500 sqft · 2 BR / 1 BA<br>historic</span></div>
+    </div>
+
+    <!-- the rest of the narrative, in 2-column flow -->
+    <div class="about-prose">
+      <p>
+        <strong>2005 Jeanie Lane</strong>, the main house, lives like a modern home with
+        the warmth of an older one. A sunken living room with a stone fireplace.
+        Hand-carved built-ins throughout. A bright, open kitchen with a butler's pantry —
+        the kind of room where guests end up with a glass in hand long before dinner.
+      </p>
+      <p>
+        Six bedrooms, every one en-suite. The primary is a wing of its own: tray
+        ceilings, French doors to the garden, soaking tub, dual showers, walk-in closet,
+        marble floors with radiant heat. Three more bedrooms upstairs — two with private
+        balconies — plus a game room with a wet bar that opens onto a deck above the
+        vineyard.
+      </p>
+      <p>
+        <strong>2007 Jeanie Lane</strong> is your own historic 1,500-sqft cottage —
+        its own address, its own porch, two bedrooms, and an updated kitchen. Together
+        the two homes give you <strong>eight bedrooms and ten bathrooms</strong> — room
+        for three or four generations, or a long weekend with every friend you have.
+      </p>
+      <p>
+        <strong>Jeanie Lane is a private road.</strong> No commuter traffic, no
+        through-route. Mature oaks and the vineyard screen the property on every side.
+        You'll hear the vines move before you hear a car.
+      </p>
+      <p>
+        <strong>4.59 flat, fully usable acres</strong>, unincorporated Santa Clara County
+        — no city overlay, Rural Residential zoning, private well, SB9-eligible. A
+        planted Zinfandel vineyard. An oak grove for ceremonies. A stone patio that seats
+        twenty under string lights. Thirty minutes to downtown San Jose. Most days, you
+        won't need it.
+      </p>
+    </div>
+
+    <!-- distinctive features — full-width 4-up -->
+    <div class="highlights">
+      <div class="highlight">
+        <div class="img"><img src="assets/photos/11-library-rotunda.jpg" alt="Library rotunda"></div>
+        <div class="body">
+          <span class="tag">Library Rotunda</span>
+          <h3>A two-story bookcase tower.</h3>
+          <p>Custom-millwork rotunda with floor-to-ceiling shelves and clerestory windows. The feature most-photographed by guests.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <div class="img"><img src="assets/photos/14-game-room-1.jpg" alt="Game pavilion"></div>
+        <div class="body">
+          <span class="tag">Game Pavilion</span>
+          <h3>Garage doors that actually open.</h3>
+          <p>Pool, foosball, ping pong, sectional, ambient string lights. Roll-up doors flow the room to the lawn.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <div class="img"><img src="assets/photos/10-vaulted-beams.jpg" alt="Vaulted beams"></div>
+        <div class="body">
+          <span class="tag">Great Room</span>
+          <h3>Vaulted beams,<br>stone hearth.</h3>
+          <p>Twenty-foot vaulted ceilings with exposed timber. Guests gather here; hosts cook within sight.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <div class="img"><img src="assets/photos/23-vineyard-bride.jpg" alt="Vineyard"></div>
+        <div class="body">
+          <span class="tag">Working Vineyard</span>
+          <h3>Wine-country views,<br>on-property.</h3>
+          <p>A young vineyard runs along the parcel — backdrop and revenue upside. Already used for ceremony photography.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:32px">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num-tag">02</span>
+      <h2>Inside the residence.</h2>
+      <p class="lede">All photography is of the actual property — not a comp, not a render.
+      Click any image to enlarge.</p>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <div class="g g-c7 g-r3"><img src="assets/photos/13-living-fireplace-wide.jpg" alt=""><span class="cap">Great room with stone hearth</span></div>
+      <div class="g g-c5 g-r3"><img src="assets/photos/05-living-stone-fireplace.jpg" alt=""><span class="cap">Sunken sitting & open stair</span></div>
+      <div class="g g-c4 g-r2"><img src="assets/photos/09-dining-room.jpg" alt=""><span class="cap">Formal dining</span></div>
+      <div class="g g-c4 g-r2"><img src="assets/photos/07-staircase-overlook.jpg" alt=""><span class="cap">Atrium & loft</span></div>
+      <div class="g g-c4 g-r2"><img src="assets/photos/08-staircase-library.jpg" alt=""><span class="cap">Maple staircases</span></div>
+      <div class="g g-c5 g-r2"><img src="assets/photos/04-bedroom-primary.jpg" alt=""><span class="cap">Primary suite</span></div>
+      <div class="g g-c4 g-r2"><img src="assets/photos/06-bedroom-fourpost.jpg" alt=""><span class="cap">Guest bedroom</span></div>
+      <div class="g g-c3 g-r2"><img src="assets/photos/03-living-leather.jpg" alt=""><span class="cap">Family lounge</span></div>
+      <div class="g g-c6 g-r3"><img src="assets/photos/12-staircase-down.jpg" alt=""><span class="cap">View into the rotunda</span></div>
+      <div class="g g-c6 g-r3"><img src="assets/photos/15-game-room-2.jpg" alt=""><span class="cap">Game pavilion · open-air mode</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- POSSIBILITIES -->
+<section id="possibilities" class="poss-section">
+  <div class="poss-intro">
+    <span class="num-tag">03</span>
+    <h2>The kind of estate<br>that lets you say <em>yes.</em></h2>
+    <p>
+      Most homes have one use. This one has dozens. Nearly five acres of usable land, two complete
+      residences, a barn-scale game pavilion, a real driveway, and not a neighbor in sight —
+      the kind of property where what you can do isn't constrained by the property itself.
+    </p>
+  </div>
+
+  <div class="poss-row">
+
+    <!-- Pillar 1: Host -->
+    <div class="poss-cell">
+      <div class="photo"><img src="assets/photos/26-patio-event-dusk.jpg" alt="Patio at dusk during an event"></div>
+      <div class="body">
+        <span class="tag">Host anything</span>
+        <h3>A venue<br><em>built for gatherings.</em></h3>
+        <p>The string-lit patio runs the full length of the home, opening onto the vineyard.
+        Weddings, family reunions, corporate retreats, milestone birthdays — the infrastructure
+        is already here.</p>
+        <ul>
+          <li><span>Outdoor capacity</span><strong>~120 seated</strong></li>
+          <li><span>Indoor great room</span><strong>50+ standing</strong></li>
+          <li><span>Catering surfaces</span><strong>Patio + kitchen</strong></li>
+          <li><span>Sleeping on-site</span><strong>Both homes</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pillar 2: Park -->
+    <div class="poss-cell">
+      <div class="photo"><img src="assets/photos/27-rv-on-property.jpg" alt="RV parked on property"></div>
+      <div class="body">
+        <span class="tag">Park everything</span>
+        <h3>Room for the RV.<br>And <em>everyone's car.</em></h3>
+        <p>A full-coach motorhome fits comfortably with room to spare. The circular driveway
+        accommodates 20+ guest vehicles without spilling onto the street — a rare quality this
+        close to the Bay.</p>
+        <ul>
+          <li><span>RV / coach pad</span><strong>Class A capable</strong></li>
+          <li><span>Guest parking</span><strong>20+ vehicles</strong></li>
+          <li><span>Garage bays</span><strong>3 + workshop</strong></li>
+          <li><span>Trailer storage</span><strong>Side yard</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pillar 3: Disappear -->
+    <div class="poss-cell">
+      <div class="photo"><img src="assets/photos/28-great-room-empty.jpg" alt="Great room with stone fireplace"></div>
+      <div class="body">
+        <span class="tag">Disappear from the world</span>
+        <h3>Privacy you<br>can <em>actually feel.</em></h3>
+        <p>Jeanie Lane is a private road — no commuter traffic, no through-route, no
+        strangers. Set back from even that, screened by mature oaks and the working
+        vineyard. The nearest building you can see from the patio is 2007 — your second
+        home.</p>
+        <ul>
+          <li><span>Street access</span><strong>Private road</strong></li>
+          <li><span>Visual screen</span><strong>Oaks + vineyard</strong></li>
+          <li><span>Shared walls</span><strong>None</strong></li>
+          <li><span>Lot privacy</span><strong>Estate-grade</strong></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INCOME -->
+<section id="income" class="income-section">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num-tag">04</span>
+      <h2>Twenty-one months booked,<br>summer 2026 in motion.</h2>
+      <p class="lede">All figures below pulled directly from Airbnb, VRBO, and bookkeeping
+      records. No projections, no pro forma — actual cash collected, plus confirmed
+      reservations already on the books.</p>
+    </div>
+
+    <div class="bignum-grid">
+      <div>
+        <div class="l">Gross revenue · life-to-date</div>
+        <div class="v"><sup>$</sup>237,829</div>
+        <div class="sub">Combined Sep '24 — Jun '26, both units</div>
+      </div>
+      <div>
+        <div class="l">June 2026 alone</div>
+        <div class="v"><sup>$</sup>18,663</div>
+        <div class="sub">$7,961 collected + $10,702 confirmed</div>
+      </div>
+      <div>
+        <div class="l">Confirmed forward · Jul–Aug</div>
+        <div class="v"><sup>$</sup>26,500</div>
+        <div class="sub">Reservations already on calendar</div>
+      </div>
+      <div>
+        <div class="l">Average daily rate</div>
+        <div class="v"><sup>$</sup>1,113</div>
+        <div class="sub">Across 88 reservations · all channels</div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:24px">
+        <div>
+          <h3 style="margin-bottom:6px">Monthly gross revenue</h3>
+          <div class="sub" style="margin-bottom:0">Combined across both units · September 2024 → August 2026</div>
+        </div>
+        <div style="display:flex;gap:20px;font-size:12px;color:var(--ink-soft);align-items:center">
+          <span style="display:flex;align-items:center;gap:8px"><span style="width:14px;height:14px;background:#a4502a;border-radius:2px;display:inline-block"></span>Cash collected</span>
+          <span style="display:flex;align-items:center;gap:8px"><span style="width:14px;height:14px;background:rgba(164,80,42,.28);border:1px dashed #a4502a;border-radius:2px;display:inline-block"></span>Confirmed · upcoming payout</span>
+        </div>
+      </div>
+      <svg id="revChart" viewBox="0 0 1200 360" style="width:100%;height:auto;display:block"></svg>
+      <p style="margin-top:24px;font-size:13px;color:var(--ink-soft);line-height:1.6;border-top:1px solid var(--rule);padding-top:18px">
+        <strong style="color:var(--ink)">June 2026: $18,663 total ($7,961 collected + $10,702 confirmed).</strong>
+        July and August are tracking ahead of last summer's pace — the calendar shows the seasonal pattern repeating with continued strength.
+      </p>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-card" style="margin-bottom:0">
+        <h3>Channel mix</h3>
+        <div class="sub">How guests find the listing — across all $222K booked</div>
+        <svg id="chMix" viewBox="0 0 600 260" style="width:100%;height:auto;display:block"></svg>
+      </div>
+      <div class="chart-card" style="margin-bottom:0">
+        <h3>Performance snapshot</h3>
+        <div class="sub">As of June 2026</div>
+        <div style="display:flex;flex-direction:column;gap:0;margin-top:12px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule);padding:14px 0">
+            <span style="color:var(--ink-soft);font-size:13px">Best summer month '25</span>
+            <span style="font-family:Fraunces,serif;font-size:26px">$19,588</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule);padding:14px 0">
+            <span style="color:var(--ink-soft);font-size:13px">June '26 (tracking)</span>
+            <span style="font-family:Fraunces,serif;font-size:26px">$18,663</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule);padding:14px 0">
+            <span style="color:var(--ink-soft);font-size:13px">Average Daily Rate</span>
+            <span style="font-family:Fraunces,serif;font-size:26px">$1,113</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding:14px 0">
+            <span style="color:var(--ink-soft);font-size:13px">Repeat-eligible guests</span>
+            <span style="font-family:Fraunces,serif;font-size:26px">85+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:48px;font-size:12px;color:var(--ink-soft);max-width:80ch;line-height:1.6">
+      Life-to-date gross includes $222,128 through May 2026 plus $15,701 booked across both units in June 2026 (paid + confirmed). Operating expenses exclude mortgage / PITI proxy. Full bookkeeping ledger and live reservation export available under NDA.
+    </p>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num-tag">05</span>
+      <h2>Where it sits.</h2>
+      <p class="lede">Southern gateway of Santa Clara County. Wine country at the doorstep,
+      Silicon Valley within an hour.</p>
+    </div>
+
+    <div class="loc-hero">
+      <div class="img-wrap">
+        <img src="assets/photos/11-library-rotunda.jpg" alt="Library rotunda overlooking vineyard country">
+        <span class="tag">Santa Clara Valley AVA</span>
+      </div>
+      <div class="blurb">
+        <div>
+          <h3>An agricultural soul with a Silicon Valley address.</h3>
+          <p>Known as the "Garlic Capital of the World" and the heart of the Santa Clara
+          Valley AVA, Gilroy puts working vineyards, alpaca and goat farms, and the county
+          park trails within minutes — while Silicon Valley, the Caltrain, and Monterey Bay
+          all sit inside an hour.</p>
+        </div>
+        <div class="mini-stats">
+          <div><div class="l">Median home</div><div class="v">$1.8M+</div></div>
+          <div><div class="l">Pop. growth · 20 yr</div><div class="v">+45%</div></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="loc-grid-title"><strong>What's nearby</strong> — guest favorites within easy reach</p>
+    <div class="loc-poi">
+      <div class="poi"><div class="icon">A</div><div class="name">Back to Eden Ranch<span>Alpacas · guest-favorite drop-in</span></div><div class="dist">3 min</div></div>
+      <div class="poi"><div class="icon">B</div><div class="name">Happy Goats Farm<span>Petting & feeding · kids love it</span></div><div class="dist">3 min</div></div>
+      <div class="poi"><div class="icon">C</div><div class="name">Verde Vineyards & Satori<span>Family tastings, picnic-friendly</span></div><div class="dist">4–5 min</div></div>
+      <div class="poi"><div class="icon">D</div><div class="name">Gilroy Premium Outlets<span>145 stores · downtown Gilroy</span></div><div class="dist">12 min</div></div>
+      <div class="poi"><div class="icon">E</div><div class="name">County Park trails<span>Walking & biking · Coyote Lake</span></div><div class="dist">16 min</div></div>
+      <div class="poi"><div class="icon">F</div><div class="name">Gilroy Gardens Family Park<span>Theme park & events venue</span></div><div class="dist">19 min</div></div>
+      <div class="poi"><div class="icon">G</div><div class="name">Downtown San Jose<span>Silicon Valley HQs · Caltrain</span></div><div class="dist">40 min</div></div>
+      <div class="poi"><div class="icon">H</div><div class="name">Monterey Bay & SFO<span>Weekend escape · travel feeder</span></div><div class="dist">45–75 min</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- THESIS -->
+<section class="thesis-section">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num-tag">06</span>
+      <h2>Three ways<br>to own this.</h2>
+      <p class="lede">The dual-unit structure — and the event-venue layer — make this property
+      unusually flexible. Pick the thesis that matches your strategy.</p>
+    </div>
+
+    <div class="thesis-grid">
+      <div class="thesis-card">
+        <span class="badge">Path A · Investor</span>
+        <h4>Inherit the operation.</h4>
+        <p>Adopt the existing system: same cleaners, same pricing engine, same calendar. With
+        2007 now contributing and weekend events layered in, projected combined gross
+        approaches <strong>$220K+ annualized</strong>. Operator notes, vendor list, and SOPs
+        included.</p>
+      </div>
+      <div class="thesis-card">
+        <span class="badge">Path B · Multi-generational</span>
+        <h4>Three generations,<br>one private road.</h4>
+        <p>Eight bedrooms, ten baths, two front doors, one driveway. Grandparents in 2007
+        with their own entrance. Parents in the main house. Kids and cousins upstairs.
+        The kind of compound that finally makes three- or four-generation living feel easy
+        — without anyone feeling crowded.</p>
+      </div>
+      <div class="thesis-card">
+        <span class="badge">Path C · Wedding venue</span>
+        <h4>Lean into events.</h4>
+        <p>Multi-day weekend buyouts at venue rates ($8K–$15K) instead of nightly STR. The
+        infrastructure is in place — driveway, RV pad, lawn, vineyard photo backdrop, two
+        homes for the wedding party. A natural pivot for the right operator.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="tour" class="cta-section">
+  <div class="cta-bg"><img src="assets/photos/22-wedding-kiss.jpg" alt=""></div>
+  <div class="cta-content">
+    <p class="kicker" style="margin-bottom:18px;color:#e8c98f">Schedule a private tour</p>
+    <h2>Come see why <em>guests<br>keep coming back.</em></h2>
+    <p>Walkthroughs by appointment Monday — Sunday. Investor data room — full ledger,
+    reservation export, calendar, photography library — available under NDA.</p>
+    <div class="cta-buttons">
+      <a class="btn btn-primary" href="/cdn-cgi/l/email-protection#86e2e3fef2e3f4c6e2feeae7f2a8e5e9ebaaf5f3e8eaeffff3e7e8bec6e1ebe7efeaa8e5e9ebb9f5f3e4ece3e5f2bbb4b6b6b3adb4b6b6b1a6cce3e7e8efe3a6cae7e8e3a6640612a6cfe8f7f3eff4ff">Request the data room</a>
+      <a class="btn btn-secondary" href="#contact-card">Speak with us →</a>
+    </div>
+
+    <div id="contact-card" class="cta-contacts">
+      <div class="contact">
+        <div class="name">Dexter Lat</div>
+        <a href="/cdn-cgi/l/email-protection#3e5a5b464a5b4c7e5a46525f4a105d5153" class="line"><span class="__cf_email__" data-cfemail="8befeef3ffeef9cbeff3e7eaffa5e8e4e6">[email&#160;protected]</span></a>
+        <a href="tel:+15106003398" class="line">(510) 600-3398</a>
+      </div>
+      <div class="contact">
+        <div class="name">Liyuan Sun</div>
+        <a href="/cdn-cgi/l/email-protection#4132342f2d283834202f7901262c20282d6f222e2c" class="line"><span class="__cf_email__" data-cfemail="aad9dfc4c6c3d3dfcbc492eacdc7cbc3c684c9c5c7">[email&#160;protected]</span></a>
+        <a href="tel:+16692658218" class="line">(669) 265-8218</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap inner">
+    <div>
+      <div class="brand">2005 + 2007<br><em>Jeanie Lane</em></div>
+      <p class="meta" style="margin-top:18px">An income-producing<br>Craftsman estate in<br>Gilroy, California.</p>
+    </div>
+    <div>
+      <div class="meta">
+        <strong>Listing inquiries</strong>
+        <div class="contact-block">
+          Dexter Lat<br>
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1b5b4a9a5b4a391b5a9bdb0a5ffb2bebc">[email&#160;protected]</a><br>
+          (510) 600-3398
+        </div>
+        <div class="contact-block">
+          Liyuan Sun<br>
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="285b5d464441515d494610684f45494144064b4745">[email&#160;protected]</a><br>
+          (669) 265-8218
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="meta"><strong>Listing #JL-2026</strong><br>Santa Clara County, CA<br>All financial figures derived<br>from operator records and<br>platform statements.</div>
+    </div>
+    <div class="legal" style="grid-column:1/-1">
+      © 2026 · Information believed accurate but not warranted. Buyer to verify all material facts. This is not an offer to sell securities. Photography is of the actual property; some images depict private events held on-site.
+    </div>
+  </div>
+</footer>
+
+<!-- lightbox -->
+<div class="lightbox" id="lb"><span class="close">CLOSE ✕</span><img id="lbImg" src="" alt=""></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ===== Monthly revenue chart =====
+(function(){
+  // [label, paid, upcoming] — Sep '24 through Aug '26
+  const data = [
+    ["Sep '24",4175.10,0],["Oct '24",2680.80,0],["Nov '24",6271.35,0],["Dec '24",14520.00,0],
+    ["Jan '25",12688.65,0],["Feb '25",8901.74,0],["Mar '25",7841.16,0],["Apr '25",15451.99,0],
+    ["May '25",12585.56,0],["Jun '25",12392.26,0],["Jul '25",19588.45,0],["Aug '25",16698.92,0],
+    ["Sep '25",5049.31,0],["Oct '25",15094.28,0],["Nov '25",13323.24,0],["Dec '25",7674.34,0],
+    ["Jan '26",6544.90,0],["Feb '26",10324.04,0],["Mar '26",12929.47,0],["Apr '26",13690.62,0],
+    ["May '26",3701.59,0],
+    ["Jun '26",7961.06,10702.19],["Jul '26",4000,13000],["Aug '26",2000,7500]
+  ];
+  const svg = document.getElementById('revChart');
+  const W=1200,H=360, ml=58, mr=20, mt=24, mb=44;
+  const cw = W-ml-mr, ch = H-mt-mb;
+  const max = 22000;
+  const ns = "http://www.w3.org/2000/svg";
+
+  for (let i=0;i<=4;i++){
+    const y = mt + ch - (ch * i/4);
+    const line = document.createElementNS(ns,'line');
+    line.setAttribute('x1',ml);line.setAttribute('x2',W-mr);
+    line.setAttribute('y1',y);line.setAttribute('y2',y);
+    line.setAttribute('stroke','rgba(31,26,20,.08)');line.setAttribute('stroke-width','1');
+    svg.appendChild(line);
+    const lbl = document.createElementNS(ns,'text');
+    lbl.setAttribute('x',ml-12);lbl.setAttribute('y',y+4);
+    lbl.setAttribute('text-anchor','end');
+    lbl.setAttribute('font-family','Fraunces,serif');
+    lbl.setAttribute('font-size','12');
+    lbl.setAttribute('fill','rgba(31,26,20,.45)');
+    lbl.textContent = '$' + (max*i/4/1000).toFixed(0)+'k';
+    svg.appendChild(lbl);
+  }
+
+  const bw = cw / data.length * 0.62;
+  data.forEach((d,i)=>{
+    const x = ml + (i + 0.19) * (cw/data.length);
+    const paid = d[1], upcoming = d[2] || 0, tot = paid + upcoming;
+    const hPaid = (paid/max) * ch;
+    const hUp = (upcoming/max) * ch;
+    const yPaid = mt + ch - hPaid;
+    const yUp = yPaid - hUp;
+
+    // paid (solid)
+    if (paid > 0){
+      const r = document.createElementNS(ns,'rect');
+      r.setAttribute('x',x);r.setAttribute('y',yPaid);
+      r.setAttribute('width',bw);r.setAttribute('height',hPaid);
+      r.setAttribute('fill', tot > 18000 ? '#7a3318' : '#a4502a');
+      r.setAttribute('rx','2');
+      svg.appendChild(r);
+    }
+    // upcoming (lighter, hatched feel via lower opacity + outline)
+    if (upcoming > 0){
+      const r = document.createElementNS(ns,'rect');
+      r.setAttribute('x',x);r.setAttribute('y',yUp);
+      r.setAttribute('width',bw);r.setAttribute('height',hUp);
+      r.setAttribute('fill','rgba(164,80,42,.28)');
+      r.setAttribute('stroke','#a4502a');
+      r.setAttribute('stroke-width','1');
+      r.setAttribute('stroke-dasharray','3 3');
+      r.setAttribute('rx','2');
+      svg.appendChild(r);
+    }
+
+    // label total on tall bars
+    if (tot > 14000){
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x', x + bw/2);
+      t.setAttribute('y', yUp - 8);
+      t.setAttribute('text-anchor','middle');
+      t.setAttribute('font-family','Fraunces,serif');
+      t.setAttribute('font-size','11');
+      t.setAttribute('fill','rgba(31,26,20,.85)');
+      t.textContent = '$'+(tot/1000).toFixed(1)+'k';
+      svg.appendChild(t);
+    }
+
+    if (i%3===0 || i===data.length-1){
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x', x + bw/2);
+      t.setAttribute('y', H-mb+22);
+      t.setAttribute('text-anchor','middle');
+      t.setAttribute('font-family','Inter,sans-serif');
+      t.setAttribute('font-size','11');
+      t.setAttribute('fill','rgba(31,26,20,.5)');
+      t.setAttribute('letter-spacing','.05em');
+      t.textContent = d[0];
+      svg.appendChild(t);
+    }
+  });
+
+  const ax = document.createElementNS(ns,'line');
+  ax.setAttribute('x1',ml);ax.setAttribute('x2',W-mr);
+  ax.setAttribute('y1',mt+ch);ax.setAttribute('y2',mt+ch);
+  ax.setAttribute('stroke','rgba(31,26,20,.25)');ax.setAttribute('stroke-width','1');
+  svg.appendChild(ax);
+})();
+
+// ===== Channel mix donut =====
+(function(){
+  const data = [
+    {label:"Airbnb",value:190233.55,color:"#a4502a"},
+    {label:"VRBO / HomeAway",value:14400.54,color:"#b48a3c"},
+    {label:"Booking Engine",value:8993.68,color:"#7a3318"},
+    {label:"Direct",value:8500,color:"#525a2c"}
+  ];
+  const total = data.reduce((s,d)=>s+d.value,0);
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.getElementById('chMix');
+  const cx=130,cy=130,r=88,sw=22;
+  let acc = -Math.PI/2;
+  data.forEach(d=>{
+    const ang = (d.value/total)*Math.PI*2;
+    const x1 = cx + r*Math.cos(acc);
+    const y1 = cy + r*Math.sin(acc);
+    const x2 = cx + r*Math.cos(acc+ang);
+    const y2 = cy + r*Math.sin(acc+ang);
+    const large = ang > Math.PI ? 1 : 0;
+    const p = document.createElementNS(ns,'path');
+    p.setAttribute('d',`M ${x1} ${y1} A ${r} ${r} 0 ${large} 1 ${x2} ${y2}`);
+    p.setAttribute('fill','none');
+    p.setAttribute('stroke',d.color);
+    p.setAttribute('stroke-width',sw);
+    svg.appendChild(p);
+    acc += ang;
+  });
+  const t1 = document.createElementNS(ns,'text');
+  t1.setAttribute('x',cx);t1.setAttribute('y',cy-2);
+  t1.setAttribute('text-anchor','middle');t1.setAttribute('fill','#1f1a14');
+  t1.setAttribute('font-family','Fraunces,serif');t1.setAttribute('font-size','26');
+  t1.textContent='$222K';
+  svg.appendChild(t1);
+  const t2 = document.createElementNS(ns,'text');
+  t2.setAttribute('x',cx);t2.setAttribute('y',cy+18);
+  t2.setAttribute('text-anchor','middle');t2.setAttribute('fill','rgba(31,26,20,.55)');
+  t2.setAttribute('font-family','Inter,sans-serif');t2.setAttribute('font-size','11');
+  t2.setAttribute('letter-spacing','.16em');
+  t2.textContent='ALL CHANNELS';
+  svg.appendChild(t2);
+
+  data.forEach((d,i)=>{
+    const y = 36 + i*44;
+    const sw = document.createElementNS(ns,'rect');
+    sw.setAttribute('x',290);sw.setAttribute('y',y);
+    sw.setAttribute('width',14);sw.setAttribute('height',14);
+    sw.setAttribute('fill',d.color);sw.setAttribute('rx','2');
+    svg.appendChild(sw);
+    const lab = document.createElementNS(ns,'text');
+    lab.setAttribute('x',314);lab.setAttribute('y',y+12);
+    lab.setAttribute('fill','#1f1a14');
+    lab.setAttribute('font-family','Inter,sans-serif');
+    lab.setAttribute('font-size','13');
+    lab.textContent=d.label;
+    svg.appendChild(lab);
+    const pct = (d.value/total*100).toFixed(1)+'%';
+    const v = document.createElementNS(ns,'text');
+    v.setAttribute('x',314);v.setAttribute('y',y+30);
+    v.setAttribute('fill','rgba(31,26,20,.55)');
+    v.setAttribute('font-family','Fraunces,serif');
+    v.setAttribute('font-size','14');
+    v.textContent='$'+(d.value/1000).toFixed(1)+'k · '+pct;
+    svg.appendChild(v);
+  });
+})();
+
+
+
+// ===== lightbox =====
+(function(){
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lbImg');
+  document.querySelectorAll('#gallery .g, .highlight .img, .poss-cell .photo').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const img = el.querySelector('img');
+      if(!img) return;
+      lbImg.src = img.src;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('open'));
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
+})();
+</script>
+
+</body>
+</html>
