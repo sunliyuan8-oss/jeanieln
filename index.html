@@ -728,19 +728,19 @@ footer .legal{font-size:11px;color:rgba(245,239,226,.4);margin-top:48px;border-t
     <p>Walkthroughs by appointment Monday — Sunday. Investor data room — full ledger,
     reservation export, calendar, photography library — available under NDA.</p>
     <div class="cta-buttons">
-      <a class="btn btn-primary" href="/cdn-cgi/l/email-protection#86e2e3fef2e3f4c6e2feeae7f2a8e5e9ebaaf5f3e8eaeffff3e7e8bec6e1ebe7efeaa8e5e9ebb9f5f3e4ece3e5f2bbb4b6b6b3adb4b6b6b1a6cce3e7e8efe3a6cae7e8e3a6640612a6cfe8f7f3eff4ff">Request the data room</a>
+      <a class="btn btn-primary" data-em="dexter|dxlat.com,sunliyuan8|gmail.com" data-sub="2005+2007 Jeanie Lane — Inquiry" href="#">Request the data room</a>
       <a class="btn btn-secondary" href="#contact-card">Speak with us →</a>
     </div>
 
     <div id="contact-card" class="cta-contacts">
       <div class="contact">
         <div class="name">Dexter Lat</div>
-        <a href="/cdn-cgi/l/email-protection#3e5a5b464a5b4c7e5a46525f4a105d5153" class="line"><span class="__cf_email__" data-cfemail="8befeef3ffeef9cbeff3e7eaffa5e8e4e6">[email&#160;protected]</span></a>
+        <a data-em="dexter|dxlat.com" href="#" class="line em-line"></a>
         <a href="tel:+15106003398" class="line">(510) 600-3398</a>
       </div>
       <div class="contact">
         <div class="name">Liyuan Sun</div>
-        <a href="/cdn-cgi/l/email-protection#4132342f2d283834202f7901262c20282d6f222e2c" class="line"><span class="__cf_email__" data-cfemail="aad9dfc4c6c3d3dfcbc492eacdc7cbc3c684c9c5c7">[email&#160;protected]</span></a>
+        <a data-em="sunliyuan8|gmail.com" href="#" class="line em-line"></a>
         <a href="tel:+16692658218" class="line">(669) 265-8218</a>
       </div>
     </div>
@@ -758,12 +758,12 @@ footer .legal{font-size:11px;color:rgba(245,239,226,.4);margin-top:48px;border-t
         <strong>Listing inquiries</strong>
         <div class="contact-block">
           Dexter Lat<br>
-          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1b5b4a9a5b4a391b5a9bdb0a5ffb2bebc">[email&#160;protected]</a><br>
+          <span data-em="dexter|dxlat.com" class="em-text"></span><br>
           (510) 600-3398
         </div>
         <div class="contact-block">
           Liyuan Sun<br>
-          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="285b5d464441515d494610684f45494144064b4745">[email&#160;protected]</a><br>
+          <span data-em="sunliyuan8|gmail.com" class="em-text"></span><br>
           (669) 265-8218
         </div>
       </div>
@@ -780,7 +780,7 @@ footer .legal{font-size:11px;color:rgba(245,239,226,.4);margin-top:48px;border-t
 <!-- lightbox -->
 <div class="lightbox" id="lb"><span class="close">CLOSE ✕</span><img id="lbImg" src="" alt=""></div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ===== Monthly revenue chart =====
 (function(){
   // [label, paid, upcoming] — Sep '24 through Aug '26
@@ -964,6 +964,22 @@ footer .legal{font-size:11px;color:rgba(245,239,226,.4);margin-top:48px;border-t
   });
   lb.addEventListener('click',()=>lb.classList.remove('open'));
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
+})();
+
+// ===== assemble email addresses (avoid Cloudflare email-protection scrubber) =====
+(function(){
+  const at = String.fromCharCode(64);
+  const decode = s => s.split(',').map(p => p.replace('|', at)).join(',');
+  document.querySelectorAll('[data-em]').forEach(el => {
+    const emails = decode(el.getAttribute('data-em'));
+    if (el.tagName === 'A') {
+      const sub = el.getAttribute('data-sub');
+      el.href = 'mailto:' + emails + (sub ? '?subject=' + encodeURIComponent(sub) : '');
+      if (el.classList.contains('em-line')) el.textContent = emails;
+    } else {
+      el.textContent = emails;
+    }
+  });
 })();
 </script>
 
