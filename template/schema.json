@@ -1,0 +1,203 @@
+{
+  "$comment": "Variables required to instantiate a new listing site from this template. Copy ../index.html and find-and-replace all values matching the patterns below.",
+
+  "property": {
+    "title_address": "2005 + 2007 Jeanie Lane",
+    "city_state_zip": "Gilroy, California 95020",
+    "county": "Santa Clara County",
+    "jurisdiction": "Unincorporated · Santa Clara County",
+    "neighborhood_area": "San Martin",
+    "listing_number": "JL-2026",
+    "lot_size": "4.59 acres",
+    "lot_terrain": "all flat",
+    "zoning": "Rural Residential · SB9-eligible",
+    "permit_status": "Both homes county-permitted",
+    "water_source": "Private well · on-site",
+    "private_road": true,
+    "main_home_sqft": "~6,000 sqft",
+    "main_home_brba": "6 BR / 7+2 BA",
+    "main_home_year_built": 2010,
+    "main_home_style": "Craftsman shingle with stone-column entry",
+    "secondary_home_address": "2007 Jeanie Lane",
+    "secondary_home_sqft": "1,500 sqft",
+    "secondary_home_brba": "2 BR / 1 BA",
+    "secondary_home_descriptor": "historic cottage with separate postal address",
+    "combined_brba_summary": "eight bedrooms and ten bathrooms",
+    "outdoor_features": ["Zinfandel vineyard", "oak grove", "string-lit patio", "broad event lawn"],
+    "drive_to_major_city": "Thirty minutes to downtown San Jose"
+  },
+
+  "hero": {
+    "tagline_top_left": "Off-Market Preview · Listing #JL-2026",
+    "tagline_top_right": "Santa Clara County, California",
+    "title_line_1": "A Craftsman estate in",
+    "title_line_2_italic": "wine country.",
+    "sub_paragraph": "Two homes, a private vineyard, and a wedding-ready lawn — twenty months of proven short-stay revenue on 4.59 acres of flat, unincorporated land north of Gilroy.",
+    "background_photo": "assets/photos/01-exterior-front.jpg"
+  },
+
+  "stat_strip": [
+    {"value": "$237,829", "label": "Gross revenue · life-to-date"},
+    {"value": "$18,663", "label": "June 2026 alone"},
+    {"value": "95+", "label": "Reservations"},
+    {"value": "$1,113", "label": "Average daily rate"},
+    {"value": "85+", "label": "Unique guests"}
+  ],
+
+  "section_01_property": {
+    "h2": "An estate that<br>actually earns its keep.",
+    "lede": "4.59 unincorporated acres in the San Martin area — county jurisdiction, no city. Two separately-addressed Craftsman residences, both fully permitted by Santa Clara County, plus a working Zinfandel vineyard and a private water well on-site.",
+    "editorial_lede": "Imagine pushing open hand-crafted antique doors and stepping into a two-story library that pulls morning light through clerestory windows onto warm hardwood floors — a 2010 home with the soul of a much older one.",
+    "fact_strip_cells": [
+      {"label": "Lot size", "value": "4.59 acres / all flat"},
+      {"label": "Jurisdiction", "value": "Unincorporated / Santa Clara County"},
+      {"label": "Permit status", "value": "Both homes / county-permitted"},
+      {"label": "Zoning", "value": "Rural Residential / SB9-eligible"},
+      {"label": "Water", "value": "Private well / on-site"},
+      {"label": "Addresses", "value": "2005 + 2007 / Jeanie Ln"},
+      {"label": "Main house", "value": "~6,000 sqft / 6 BR / 7+2 BA"},
+      {"label": "2007 second home", "value": "1,500 sqft · 2 BR / 1 BA / historic"}
+    ],
+    "prose_paragraphs": [
+      "2005 Jeanie Lane, the main house, lives like a modern home with the warmth of an older one. A sunken living room with a stone fireplace. Hand-carved built-ins throughout. A bright, open kitchen with a butler's pantry — the kind of room where guests end up with a glass in hand long before dinner.",
+      "Six bedrooms, every one en-suite. The primary is a wing of its own: tray ceilings, French doors to the garden, soaking tub, dual showers, walk-in closet, marble floors with radiant heat. Three more bedrooms upstairs — two with private balconies — plus a game room with a wet bar that opens onto a deck above the vineyard.",
+      "2007 Jeanie Lane is your own historic 1,500-sqft cottage — its own address, its own porch, two bedrooms, and an updated kitchen. Together the two homes give you eight bedrooms and ten bathrooms — room for three or four generations, or a long weekend with every friend you have.",
+      "Jeanie Lane is a private road. No commuter traffic, no through-route. Mature oaks and the vineyard screen the property on every side. You'll hear the vines move before you hear a car.",
+      "4.59 flat, fully usable acres, unincorporated Santa Clara County — no city overlay, Rural Residential zoning, private well, SB9-eligible. A planted Zinfandel vineyard. An oak grove for ceremonies. A stone patio that seats twenty under string lights. Thirty minutes to downtown San Jose. Most days, you won't need it."
+    ],
+    "highlights": [
+      {"tag": "LIBRARY ROTUNDA", "h3": "A two-story bookcase tower.", "body": "Custom-millwork rotunda with floor-to-ceiling shelves and clerestory windows. The feature most-photographed by guests.", "photo": "assets/photos/11-library-rotunda.jpg"},
+      {"tag": "GAME PAVILION", "h3": "Garage doors that actually open.", "body": "Pool, foosball, ping pong, sectional, ambient string lights. Roll-up doors flow the room to the lawn.", "photo": "assets/photos/14-game-room-1.jpg"},
+      {"tag": "GREAT ROOM", "h3": "Vaulted beams,<br>stone hearth.", "body": "Twenty-foot vaulted ceilings with exposed timber. Guests gather here; hosts cook within sight.", "photo": "assets/photos/10-vaulted-beams.jpg"},
+      {"tag": "WORKING VINEYARD", "h3": "Wine-country views,<br>on-property.", "body": "A young vineyard runs along the parcel — backdrop and revenue upside. Already used for ceremony photography.", "photo": "assets/photos/23-vineyard-bride.jpg"}
+    ]
+  },
+
+  "section_02_gallery": {
+    "h2": "Inside the residence.",
+    "lede": "All photography is of the actual property — not a comp, not a render. Click any image to enlarge.",
+    "photos": "10 photos in a 12-column masonry grid — see ../index.html for the exact cell sizes"
+  },
+
+  "section_03_possibilities": {
+    "h2": "The kind of estate<br>that lets you say <em>yes.</em>",
+    "lede": "Most homes have one use. This one has dozens. Nearly five acres of usable land, two complete residences, a barn-scale game pavilion, a real driveway, and not a neighbor in sight — the kind of property where what you can do isn't constrained by the property itself.",
+    "pillars": [
+      {
+        "tag": "HOST ANYTHING",
+        "h3": "A venue<br><em>built for gatherings.</em>",
+        "body": "The string-lit patio runs the full length of the home, opening onto the vineyard. Weddings, family reunions, corporate retreats, milestone birthdays — the infrastructure is already here.",
+        "stats": [
+          {"label": "Outdoor capacity", "value": "~120 seated"},
+          {"label": "Indoor great room", "value": "50+ standing"},
+          {"label": "Catering surfaces", "value": "Patio + kitchen"},
+          {"label": "Sleeping on-site", "value": "Both homes"}
+        ],
+        "photo": "assets/photos/26-patio-event-dusk.jpg"
+      },
+      {
+        "tag": "PARK EVERYTHING",
+        "h3": "Room for the RV.<br>And <em>everyone's car.</em>",
+        "body": "A full-coach motorhome fits comfortably with room to spare. The circular driveway accommodates 20+ guest vehicles without spilling onto the street — a rare quality this close to the Bay.",
+        "stats": [
+          {"label": "RV / coach pad", "value": "Class A capable"},
+          {"label": "Guest parking", "value": "20+ vehicles"},
+          {"label": "Garage bays", "value": "3 + workshop"},
+          {"label": "Trailer storage", "value": "Side yard"}
+        ],
+        "photo": "assets/photos/27-rv-on-property.jpg"
+      },
+      {
+        "tag": "DISAPPEAR FROM THE WORLD",
+        "h3": "Privacy you<br>can <em>actually feel.</em>",
+        "body": "Jeanie Lane is a private road — no commuter traffic, no through-route, no strangers. Set back from even that, screened by mature oaks and the working vineyard. The nearest building you can see from the patio is 2007 — your second home.",
+        "stats": [
+          {"label": "Street access", "value": "Private road"},
+          {"label": "Visual screen", "value": "Oaks + vineyard"},
+          {"label": "Shared walls", "value": "None"},
+          {"label": "Lot privacy", "value": "Estate-grade"}
+        ],
+        "photo": "assets/photos/28-great-room-empty.jpg"
+      }
+    ]
+  },
+
+  "section_04_income": {
+    "h2": "Twenty-one months booked,<br>summer 2026 in motion.",
+    "lede": "All figures below pulled directly from Airbnb, VRBO, and bookkeeping records. No projections, no pro forma — actual cash collected, plus confirmed reservations already on the books.",
+    "big_numbers": [
+      {"label": "Gross revenue · life-to-date", "value": "$237,829", "sub": "Combined Sep '24 — Jun '26, both units"},
+      {"label": "June 2026 alone", "value": "$18,663", "sub": "$7,961 collected + $10,702 confirmed"},
+      {"label": "Confirmed forward · Jul–Aug", "value": "$26,500", "sub": "Reservations already on calendar"},
+      {"label": "Average daily rate", "value": "$1,113", "sub": "Across 88 reservations · all channels"}
+    ],
+    "monthly_revenue_data": "Array of [label, paid, upcoming] tuples — see index.html line ~700 for the format. Paid = solid bar, upcoming = dashed translucent bar stacked on top.",
+    "channel_mix": [
+      {"label": "Airbnb", "value": 190233.55, "color": "#a4502a"},
+      {"label": "VRBO / HomeAway", "value": 14400.54, "color": "#b48a3c"},
+      {"label": "Booking Engine", "value": 8993.68, "color": "#7a3318"},
+      {"label": "Direct", "value": 8500, "color": "#525a2c"}
+    ],
+    "performance_snapshot": [
+      {"label": "Best summer month '25", "value": "$19,588"},
+      {"label": "June '26 (tracking)", "value": "$18,663"},
+      {"label": "Average Daily Rate", "value": "$1,113"},
+      {"label": "Repeat-eligible guests", "value": "85+"}
+    ],
+    "$comment_skip_if": "If the property is NOT income-producing (i.e. not a current STR), DROP this entire section. Replace it with a more relevant beat — e.g. 'Provenance', 'Renovation history', or simply close the gap and let the page be shorter."
+  },
+
+  "section_05_location": {
+    "h2": "Where it sits.",
+    "lede": "Southern gateway of Santa Clara County. Wine country at the doorstep, Silicon Valley within an hour.",
+    "image_hero": {
+      "photo": "assets/photos/11-library-rotunda.jpg",
+      "tag_pill": "SANTA CLARA VALLEY AVA",
+      "h3": "An agricultural soul with a Silicon Valley address.",
+      "body": "Known as the \"Garlic Capital of the World\" and the heart of the Santa Clara Valley AVA, Gilroy puts working vineyards, alpaca and goat farms, and the county park trails within minutes — while Silicon Valley, the Caltrain, and Monterey Bay all sit inside an hour.",
+      "mini_stats": [
+        {"label": "Median home", "value": "$1.8M+"},
+        {"label": "Pop. growth · 20 yr", "value": "+45%"}
+      ]
+    },
+    "pois": [
+      {"letter": "A", "name": "Back to Eden Ranch", "tagline": "Alpacas · guest-favorite drop-in", "distance": "3 min"},
+      {"letter": "B", "name": "Happy Goats Farm", "tagline": "Petting & feeding · kids love it", "distance": "3 min"},
+      {"letter": "C", "name": "Verde Vineyards & Satori", "tagline": "Family tastings, picnic-friendly", "distance": "4–5 min"},
+      {"letter": "D", "name": "Gilroy Premium Outlets", "tagline": "145 stores · downtown Gilroy", "distance": "12 min"},
+      {"letter": "E", "name": "County Park trails", "tagline": "Walking & biking · Coyote Lake", "distance": "16 min"},
+      {"letter": "F", "name": "Gilroy Gardens Family Park", "tagline": "Theme park & events venue", "distance": "19 min"},
+      {"letter": "G", "name": "Downtown San Jose", "tagline": "Silicon Valley HQs · Caltrain", "distance": "40 min"},
+      {"letter": "H", "name": "Monterey Bay & SFO", "tagline": "Weekend escape · travel feeder", "distance": "45–75 min"}
+    ]
+  },
+
+  "section_06_thesis": {
+    "h2": "Three ways<br>to own this.",
+    "lede": "The dual-unit structure — and the event-venue layer — make this property unusually flexible. Pick the thesis that matches your strategy.",
+    "cards": [
+      {"badge": "Path A · Investor", "h4": "Inherit the operation.", "body": "Adopt the existing system: same cleaners, same pricing engine, same calendar. With 2007 now contributing and weekend events layered in, projected combined gross approaches <strong>$220K+ annualized</strong>. Operator notes, vendor list, and SOPs included."},
+      {"badge": "Path B · Multi-generational", "h4": "Three generations,<br>one private road.", "body": "Eight bedrooms, ten baths, two front doors, one driveway. Grandparents in 2007 with their own entrance. Parents in the main house. Kids and cousins upstairs. The kind of compound that finally makes three- or four-generation living feel easy — without anyone feeling crowded."},
+      {"badge": "Path C · Wedding venue", "h4": "Lean into events.", "body": "Multi-day weekend buyouts at venue rates ($8K–$15K) instead of nightly STR. The infrastructure is in place — driveway, RV pad, lawn, vineyard photo backdrop, two homes for the wedding party. A natural pivot for the right operator."}
+    ]
+  },
+
+  "cta": {
+    "kicker": "SCHEDULE A PRIVATE TOUR",
+    "h2": "Come see why <em>guests<br>keep coming back.</em>",
+    "body": "Walkthroughs by appointment Monday — Sunday. Investor data room — full ledger, reservation export, calendar, photography library — available under NDA.",
+    "primary_button": "Request the data room",
+    "secondary_button": "Speak with us →",
+    "background_photo": "assets/photos/22-wedding-kiss.jpg"
+  },
+
+  "contacts": [
+    {"name": "Dexter Lat", "email_user": "dexter", "email_domain": "dxlat.com", "phone": "(510) 600-3398", "tel": "+15106003398"},
+    {"name": "Liyuan Sun", "email_user": "sunliyuan8", "email_domain": "gmail.com", "phone": "(669) 265-8218", "tel": "+16692658218"}
+  ],
+
+  "footer": {
+    "brand_tagline": "An income-producing<br>Craftsman estate in<br>Gilroy, California.",
+    "legal": "© 2026 · Information believed accurate but not warranted. Buyer to verify all material facts. This is not an offer to sell securities. Photography is of the actual property; some images depict private events held on-site."
+  }
+}
