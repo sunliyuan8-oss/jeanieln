@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>744 S Garfield Ave · A light-filled townhouse in Monterey Park</title>
-<meta name="description" content="A newly remodeled 3-bedroom townhouse in the heart of Monterey Park — double-height living room, two-car garage with EV charger, and walking distance to Garfield Park. 4.85★ Superhost on Airbnb.">
+<title>744 S Garfield Ave · Monterey Park · For Sale</title>
+<meta name="description" content="A newly remodeled three-bedroom townhouse in central Monterey Park. Coming soon to market. Two-car garage with EV charger, walking distance to Garfield Park, and ten minutes from Pasadena, DTLA, and the heart of the 626.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* light, modern townhouse palette — pulled away from Jeanie Lane wine-country terracotta */
-  --ink:#1d211c;            /* slightly cooler dark, matches the wall shadows in photos */
+  --ink:#1d211c;
   --ink-soft:#3a3f37;
-  --paper:#f6f1e6;          /* warm cream — matches the actual wall tone */
+  --paper:#f6f1e6;
   --paper-warm:#ebe4d3;
   --paper-deep:#dcd2bb;
-  --jade:#4a6b56;           /* PRIMARY accent — soft sage-jade, modern + SGV-appropriate */
+  --jade:#4a6b56;
   --jade-deep:#2f4a3c;
-  --ember:#a35a3a;          /* warm secondary, used very sparingly */
-  --brass:#a8884f;          /* gold-brass for dark-band accents */
+  --ember:#a35a3a;
+  --brass:#a8884f;
   --line:rgba(29,33,28,.14);
   --rule:rgba(29,33,28,.08);
-  --highlight:#e8d8a8;      /* warm gold used over dark photos for hero meta */
+  --highlight:#e8d8a8;
+  --coming-soon:#c4924a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -32,6 +32,8 @@ a{color:inherit;text-decoration:none}
 
 /* type */
 .serif{font-family:'Fraunces',Georgia,serif;font-weight:400}
+.cn{font-family:'Noto Serif SC','Fraunces',serif;font-weight:300;letter-spacing:.04em}
+.cn-sans{font-family:'Noto Sans SC','Inter',sans-serif;letter-spacing:.02em}
 .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)}
 .kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--jade-deep)}
 
@@ -43,6 +45,7 @@ section{padding:96px 0;position:relative}
 .section-label .num-tag{font-family:'Fraunces',serif;font-size:14px;color:var(--jade-deep);letter-spacing:.04em}
 .section-label h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(38px,5vw,64px);line-height:1.05;letter-spacing:-.022em}
 .section-label h2 em{font-style:italic;color:var(--jade-deep)}
+.section-label h2 .cn-sub{display:block;font-family:'Noto Serif SC',serif;font-weight:300;font-size:.42em;color:var(--ink-soft);margin-top:14px;letter-spacing:.06em;font-style:normal}
 .section-label .lede{font-size:15.5px;color:var(--ink-soft);line-height:1.6;max-width:44ch;align-self:end;padding-bottom:8px;justify-self:start}
 .section-label .lede strong{color:var(--ink);font-weight:500}
 
@@ -50,7 +53,8 @@ section{padding:96px 0;position:relative}
 nav.top{position:sticky;top:0;z-index:50;background:rgba(246,241,230,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
 nav.top .inner{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1280px;margin:0 auto}
 nav.top .brand{font-family:'Fraunces',serif;font-size:18px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
-nav.top .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--jade)}
+nav.top .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--coming-soon);box-shadow:0 0 0 0 rgba(196,146,74,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(196,146,74,.6)}50%{box-shadow:0 0 0 6px rgba(196,146,74,0)}}
 nav.top .brand strong{font-weight:500}
 nav.top ul{display:flex;gap:32px;list-style:none;font-size:13px;letter-spacing:.04em}
 nav.top ul a{color:var(--ink-soft);transition:color .2s}
@@ -62,42 +66,59 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;overflow:hidden;color:#fff}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
-.hero-bg::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 75% 55% at 28% 30%,rgba(20,20,18,.6) 0%,rgba(20,20,18,0) 70%);pointer-events:none}
+.hero-bg::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 75% 55% at 28% 30%,rgba(20,20,18,.62) 0%,rgba(20,20,18,0) 70%);pointer-events:none}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,20,18,.0) 50%,rgba(20,20,18,.78) 100%);pointer-events:none}
-.hero-top{position:relative;z-index:3;padding:24px 40px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.85);max-width:1440px;margin:0 auto;width:100%}
-.hero-top span:first-child{color:var(--highlight);font-weight:500}
+.hero-top{position:relative;z-index:3;padding:24px 40px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.85);max-width:1440px;margin:0 auto;width:100%;gap:16px;flex-wrap:wrap}
+.hero-top .coming-pill{display:inline-flex;align-items:center;gap:8px;background:var(--coming-soon);color:#1d1408;padding:7px 14px;border-radius:999px;font-weight:600;letter-spacing:.18em;font-size:10.5px}
+.hero-top .coming-pill .pulse{width:7px;height:7px;background:#1d1408;border-radius:50%}
+.hero-top .right{color:rgba(255,255,255,.75)}
 .hero-title-area{position:relative;z-index:2;padding:48px 40px 0;max-width:1440px;margin:0 auto;width:100%;flex:1;display:flex;align-items:flex-start}
-.hero-title-area h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,5.4vw,88px);line-height:1.0;letter-spacing:-.03em;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.45);max-width:18ch}
+.hero-title-area h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,5.4vw,86px);line-height:1.0;letter-spacing:-.03em;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.45);max-width:18ch}
 .hero-title-area h1 em{font-style:italic;color:var(--highlight);font-weight:300}
-.hero-title-area .chinese{display:none;font-family:'Fraunces',serif;font-size:clamp(22px,2.6vw,34px);font-weight:300;color:rgba(255,255,255,.86);margin-top:14px;letter-spacing:.08em;text-shadow:0 1px 12px rgba(0,0,0,.4)}
-.hero-title-area .chinese.on{display:block}
+.hero-title-area .chinese{font-family:'Noto Serif SC',serif;font-size:clamp(20px,2.4vw,32px);font-weight:300;color:rgba(255,255,255,.92);margin-top:18px;letter-spacing:.06em;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero-title-area .chinese em{font-style:normal;color:var(--highlight)}
 .hero-bottom{position:relative;z-index:2;padding:48px 40px;max-width:1440px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:end}
-.hero-bottom .sub{font-size:17px;line-height:1.6;color:rgba(255,255,255,.94);max-width:46ch;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+.hero-bottom .sub{font-size:17px;line-height:1.6;color:rgba(255,255,255,.94);max-width:50ch;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+.hero-bottom .sub-cn{display:block;font-family:'Noto Sans SC',sans-serif;font-size:14px;color:rgba(255,255,255,.75);margin-top:10px;line-height:1.7;letter-spacing:.02em;font-weight:300}
 .hero-bottom .addr{text-align:right;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.72);line-height:2;text-shadow:0 1px 8px rgba(0,0,0,.4)}
 .hero-bottom .addr strong{display:block;color:#fff;font-family:'Fraunces',serif;font-size:20px;font-weight:400;letter-spacing:-.005em;text-transform:none;margin-bottom:4px}
 
-/* stat strip */
-.stat-strip{display:grid;grid-template-columns:repeat(6,1fr);background:var(--ink);color:var(--paper)}
-.stat-strip > div{padding:32px 22px;border-right:1px solid rgba(246,241,230,.1)}
-.stat-strip > div:last-child{border-right:none}
-.stat-strip .v{font-family:'Fraunces',serif;font-size:32px;font-weight:300;letter-spacing:-.02em;line-height:1;display:block;margin-bottom:10px}
-.stat-strip .v sup{font-size:14px;color:var(--brass);vertical-align:super;margin-right:2px}
-.stat-strip .v .unit{font-size:14px;color:rgba(246,241,230,.55);font-family:'Inter',sans-serif;margin-left:4px;letter-spacing:.04em;font-weight:400}
-.stat-strip .v .star{color:var(--highlight);margin-right:4px}
-.stat-strip .l{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,241,230,.6);line-height:1.4}
+/* listing meta strip (replaces stat-strip) */
+.listing-strip{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;background:var(--ink);color:var(--paper)}
+.listing-strip > div{padding:28px 26px;border-right:1px solid rgba(246,241,230,.1);display:flex;flex-direction:column;gap:6px}
+.listing-strip > div:last-child{border-right:none}
+.listing-strip .l{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,241,230,.55);font-weight:500}
+.listing-strip .v{font-family:'Fraunces',serif;font-size:24px;font-weight:300;letter-spacing:-.015em;line-height:1.1;color:#fff}
+.listing-strip .v.big{font-size:30px}
+.listing-strip .v.price{color:var(--highlight)}
+.listing-strip .v small{font-size:13px;color:rgba(246,241,230,.55);font-family:'Inter',sans-serif;letter-spacing:.02em;font-weight:400}
+.listing-strip .sub{font-size:11.5px;color:rgba(246,241,230,.55);letter-spacing:.04em}
 
 /* about */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.about-lede{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(24px,2.4vw,32px);line-height:1.35;letter-spacing:-.012em;color:var(--ink);max-width:60ch;margin-bottom:48px}
+.about-lede{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(24px,2.4vw,32px);line-height:1.35;letter-spacing:-.012em;color:var(--ink);max-width:60ch;margin-bottom:14px}
 .about-lede::first-letter{font-family:'Fraunces',serif;font-size:84px;float:left;line-height:.85;padding:10px 16px 0 0;color:var(--jade-deep);font-weight:400}
 .about-lede em{font-style:italic;color:var(--jade-deep)}
+.about-lede-cn{font-family:'Noto Serif SC',serif;font-weight:300;font-size:17px;line-height:1.85;color:var(--ink-soft);max-width:48ch;letter-spacing:.04em}
+.lede-cn-row{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;margin-bottom:48px}
+.lede-cn-row .photo-anchor{position:relative;border-radius:6px;overflow:hidden;background:var(--paper-warm);aspect-ratio:4/3}
+.lede-cn-row .photo-anchor img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s}
+.lede-cn-row .photo-anchor:hover img{transform:scale(1.04)}
+.lede-cn-row .photo-anchor .cap{position:absolute;bottom:0;left:0;right:0;padding:22px 22px 18px;background:linear-gradient(to top,rgba(20,20,18,.78) 0%,transparent 100%);color:#fff}
+.lede-cn-row .photo-anchor .cap .kicker{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--highlight);font-weight:500;margin-bottom:6px;display:block}
+.lede-cn-row .photo-anchor .cap .line{font-family:'Fraunces',serif;font-size:18px;font-weight:400;line-height:1.25;letter-spacing:-.005em;color:#fff}
+.lede-cn-row .photo-anchor .cap .line .cn-sans{display:block;font-family:'Noto Sans SC',sans-serif;font-size:13px;color:rgba(255,255,255,.78);margin-top:4px;font-weight:300;letter-spacing:.04em}
+@media (max-width:900px){.lede-cn-row{grid-template-columns:1fr;gap:24px}.lede-cn-row .photo-anchor{aspect-ratio:5/3}}
 .about-prose{column-count:2;column-gap:56px;margin-top:36px}
 .about-prose p{font-size:16px;line-height:1.7;color:var(--ink-soft);margin-bottom:1.1em;break-inside:avoid}
 .about-prose p strong{color:var(--ink);font-weight:500}
+
 .feature-list{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 36px;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .feature-list .it{display:flex;flex-direction:column;gap:6px}
 .feature-list .it .lbl{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--jade-deep);font-weight:600}
 .feature-list .it .vl{font-family:'Fraunces',serif;font-size:20px;font-weight:400;line-height:1.25;letter-spacing:-.005em}
+.feature-list .it .vl small{font-family:'Inter',sans-serif;font-size:11.5px;color:var(--ink-soft);letter-spacing:.04em;font-weight:400}
+.feature-list .it .tbd{color:var(--ember);font-style:italic;font-size:12px;letter-spacing:.06em;margin-top:2px}
 
 /* highlights */
 .highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:72px}
@@ -106,9 +127,22 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .highlight .img img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
 .highlight:hover .img img{transform:scale(1.04)}
 .highlight .body{padding:22px 22px 24px}
-.highlight .tag{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--jade);font-weight:600;margin-bottom:10px}
+.highlight .tag{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--jade);font-weight:600;margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
 .highlight h3{font-family:'Fraunces',serif;font-size:22px;font-weight:400;letter-spacing:-.01em;line-height:1.18;margin-bottom:10px}
 .highlight p{font-size:13.5px;color:var(--ink-soft);line-height:1.55}
+
+/* selling points strip — new for For Sale, replaces what stat-strip used to do conceptually */
+.points-section{background:var(--paper-warm);padding:88px 0}
+.points-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:48px;flex-wrap:wrap;gap:16px}
+.points-header h3{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,3.6vw,46px);letter-spacing:-.02em;line-height:1.1}
+.points-header h3 .cn-sub{display:block;font-family:'Noto Serif SC',serif;font-size:.4em;color:var(--ink-soft);margin-top:8px;letter-spacing:.06em;font-weight:300}
+.points-header .right{font-size:13px;color:var(--ink-soft);max-width:36ch;text-align:right;line-height:1.55}
+.points-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.point{background:var(--paper);padding:32px 28px;display:flex;flex-direction:column;gap:10px;min-height:200px}
+.point .glyph{font-family:'Fraunces',serif;font-size:32px;color:var(--jade-deep);font-weight:300;letter-spacing:-.02em;line-height:1}
+.point h4{font-family:'Fraunces',serif;font-size:18px;font-weight:500;letter-spacing:-.005em;line-height:1.25}
+.point h4 .cn-tag{display:block;font-family:'Noto Sans SC',sans-serif;font-size:12px;color:var(--jade-deep);font-weight:400;margin-top:4px;letter-spacing:.06em}
+.point p{font-size:13px;color:var(--ink-soft);line-height:1.55;margin-top:auto}
 
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:120px;gap:10px}
@@ -122,27 +156,13 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .g-r2{grid-row:span 2}.g-r3{grid-row:span 3}.g-r4{grid-row:span 4}
 .g-c2{grid-column:span 2}.g-c3{grid-column:span 3}.g-c4{grid-column:span 4}.g-c5{grid-column:span 5}.g-c6{grid-column:span 6}.g-c7{grid-column:span 7}.g-c8{grid-column:span 8}
 
-/* reviews — replaces income section */
-.reviews-section{padding:120px 0;background:var(--paper)}
-.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
-.review-card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:36px 32px 32px;display:flex;flex-direction:column;gap:18px;position:relative}
-.review-card .stars{color:var(--brass);letter-spacing:.18em;font-size:13px}
-.review-card .quote{font-family:'Fraunces',serif;font-size:20px;font-weight:400;line-height:1.4;letter-spacing:-.005em;color:var(--ink);text-wrap:pretty}
-.review-card .meta{margin-top:auto;display:flex;justify-content:space-between;align-items:baseline;padding-top:18px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-soft)}
-.review-card .meta .who{font-weight:500;color:var(--ink)}
-.review-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--ink);color:var(--paper);border-radius:8px;overflow:hidden;margin-top:48px}
-.review-summary > div{padding:30px 28px;border-right:1px solid rgba(246,241,230,.1)}
-.review-summary > div:last-child{border-right:none}
-.review-summary .v{font-family:'Fraunces',serif;font-size:36px;font-weight:300;letter-spacing:-.02em;line-height:1;margin-bottom:10px;color:#fff}
-.review-summary .v .star{color:var(--highlight)}
-.review-summary .l{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,241,230,.6)}
-
 /* possibilities */
 .poss-section{background:var(--ink);color:var(--paper);padding:0;overflow:hidden}
 .poss-intro{padding:120px 40px 64px;max-width:1280px;margin:0 auto}
 .poss-intro .num-tag{font-family:'Fraunces',serif;color:var(--highlight);font-size:14px;letter-spacing:.04em;margin-bottom:18px;display:block}
-.poss-intro h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,5.6vw,76px);line-height:1.02;letter-spacing:-.025em;max-width:20ch;color:#fff;margin-bottom:24px}
+.poss-intro h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,5.6vw,76px);line-height:1.02;letter-spacing:-.025em;max-width:22ch;color:#fff;margin-bottom:18px}
 .poss-intro h2 em{font-style:italic;color:var(--highlight)}
+.poss-intro .h2-cn{font-family:'Noto Serif SC',serif;font-size:clamp(18px,1.9vw,24px);color:rgba(232,216,168,.85);margin-bottom:24px;font-weight:300;letter-spacing:.04em}
 .poss-intro p{color:rgba(246,241,230,.7);font-size:18px;line-height:1.65;max-width:58ch}
 .poss-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid rgba(246,241,230,.12)}
 .poss-cell{display:flex;flex-direction:column;border-right:1px solid rgba(246,241,230,.12);background:var(--ink)}
@@ -152,6 +172,7 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .poss-cell:hover .photo img{transform:scale(1.04)}
 .poss-cell .body{padding:40px 36px 48px;display:flex;flex-direction:column;flex:1}
 .poss-cell .tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--highlight);margin-bottom:14px;font-weight:500}
+.poss-cell .tag .cn{display:block;font-family:'Noto Sans SC',sans-serif;color:rgba(232,216,168,.7);font-size:11px;margin-top:3px;letter-spacing:.06em;text-transform:none;font-weight:400}
 .poss-cell h3{font-family:'Fraunces',serif;font-size:30px;font-weight:400;line-height:1.1;letter-spacing:-.018em;margin-bottom:16px;color:#fff}
 .poss-cell h3 em{font-style:italic;color:var(--highlight)}
 .poss-cell p{font-size:14.5px;color:rgba(246,241,230,.72);line-height:1.65;max-width:38ch;margin-bottom:auto}
@@ -166,12 +187,22 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .loc-hero .img-wrap .tag{position:absolute;bottom:18px;left:18px;background:rgba(29,33,28,.82);backdrop-filter:blur(6px);color:#fff;padding:8px 14px;border-radius:99px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
 .loc-hero .blurb{display:flex;flex-direction:column;justify-content:space-between;gap:24px;padding:8px 0}
 .loc-hero .blurb h3{font-family:'Fraunces',serif;font-weight:400;font-size:24px;line-height:1.25;letter-spacing:-.012em;color:var(--ink)}
+.loc-hero .blurb h3 .cn-tag{display:block;font-family:'Noto Serif SC',serif;font-size:15px;color:var(--ink-soft);margin-top:6px;font-weight:300;letter-spacing:.04em}
 .loc-hero .blurb p{font-size:15px;line-height:1.65;color:var(--ink-soft)}
 .loc-hero .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.4)}
 .loc-hero .mini-stats > div{padding:14px 16px;border-right:1px solid var(--line)}
 .loc-hero .mini-stats > div:last-child{border-right:none}
 .loc-hero .mini-stats .l{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px}
 .loc-hero .mini-stats .v{font-family:'Fraunces',serif;font-size:18px;font-weight:400;letter-spacing:-.005em}
+
+/* schools — new dedicated subsection for For Sale */
+.schools-band{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0 0 40px;background-color:var(--paper)}
+.schools-band > div{padding:24px 26px;background:var(--paper);display:flex;flex-direction:column;gap:8px}
+.schools-band .level{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--jade-deep);font-weight:600}
+.schools-band .name{font-family:'Fraunces',serif;font-size:19px;font-weight:400;line-height:1.25;letter-spacing:-.005em}
+.schools-band .meta{font-size:12px;color:var(--ink-soft);margin-top:auto}
+.schools-band .tbd{color:var(--ember);font-style:italic;font-size:11.5px;letter-spacing:.04em}
+
 .loc-grid-title{font-family:'Fraunces',serif;font-size:18px;font-weight:400;letter-spacing:-.005em;color:var(--ink-soft);margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-top:24px}
 .loc-grid-title strong{color:var(--ink);font-weight:400}
 .loc-poi{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
@@ -180,27 +211,32 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .loc-poi .poi .icon{width:26px;height:26px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:12px;color:var(--jade-deep)}
 .loc-poi .poi .name{font-family:'Fraunces',serif;font-size:17px;font-weight:400;line-height:1.2}
 .loc-poi .poi .name span{display:block;font-family:'Inter',sans-serif;font-size:11.5px;color:var(--ink-soft);margin-top:2px;font-weight:400;letter-spacing:0;line-height:1.4}
-.loc-poi .poi .dist{font-family:'Fraunces',serif;font-size:15px;color:var(--jade-deep);font-variant-numeric:tabular-nums;font-weight:400}
+.loc-poi .poi .name span.cn{font-family:'Noto Sans SC',sans-serif;color:var(--jade-deep);letter-spacing:.02em}
+.loc-poi .poi .dist{font-family:'Fraunces',serif;font-size:15px;color:var(--jade-deep);font-variant-numeric:tabular-nums;font-weight:400;text-align:right}
 
 /* thesis */
 .thesis-section{background:var(--paper-warm);padding:120px 0}
 .thesis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.thesis-card{background:var(--paper);padding:36px 32px;border-radius:6px;border:1px solid var(--line);position:relative;overflow:hidden}
-.thesis-card .badge{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--jade-deep);margin-bottom:18px;padding:5px 12px;background:rgba(74,107,86,.1);border-radius:99px;font-weight:500}
-.thesis-card h4{font-family:'Fraunces',serif;font-size:26px;font-weight:400;line-height:1.15;letter-spacing:-.01em;margin-bottom:14px}
+.thesis-card{background:var(--paper);padding:36px 32px;border-radius:6px;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px}
+.thesis-card .badge{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--jade-deep);padding:5px 12px;background:rgba(74,107,86,.1);border-radius:99px;font-weight:500;align-self:flex-start}
+.thesis-card h4{font-family:'Fraunces',serif;font-size:26px;font-weight:400;line-height:1.15;letter-spacing:-.01em}
 .thesis-card h4 em{font-style:italic;color:var(--jade-deep)}
+.thesis-card h4 .cn-tag{display:block;font-family:'Noto Serif SC',serif;font-size:15px;color:var(--ink-soft);margin-top:6px;font-weight:300;letter-spacing:.04em}
 .thesis-card p{font-size:14.5px;color:var(--ink-soft);line-height:1.65}
 .thesis-card p strong{color:var(--ink);font-weight:500}
 
 /* CTA */
-.cta-section{position:relative;padding:0;color:#fff;overflow:hidden;min-height:560px;display:flex;align-items:center}
+.cta-section{position:relative;padding:0;color:#fff;overflow:hidden;min-height:580px;display:flex;align-items:center}
 .cta-bg{position:absolute;inset:0;z-index:0}
 .cta-bg img{width:100%;height:100%;object-fit:cover;object-position:center 50%}
 .cta-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,22,18,.85),rgba(20,22,18,.6))}
 .cta-content{position:relative;z-index:2;width:100%;text-align:center;padding:120px 32px;max-width:1100px;margin:0 auto}
-.cta-content h2{font-family:'Fraunces',serif;font-size:clamp(44px,6.4vw,76px);font-weight:300;letter-spacing:-.025em;line-height:1.05;margin:0 auto 24px;max-width:20ch;color:#fff}
+.cta-content .coming-pill{display:inline-flex;align-items:center;gap:8px;background:var(--coming-soon);color:#1d1408;padding:8px 16px;border-radius:999px;font-weight:600;letter-spacing:.18em;font-size:11px;margin-bottom:28px}
+.cta-content h2{font-family:'Fraunces',serif;font-size:clamp(44px,6.4vw,76px);font-weight:300;letter-spacing:-.025em;line-height:1.05;margin:0 auto 14px;max-width:22ch;color:#fff}
 .cta-content h2 em{font-style:italic;color:var(--highlight)}
-.cta-content > p{font-size:17px;color:rgba(255,255,255,.8);max-width:54ch;margin:0 auto 40px;line-height:1.6}
+.cta-content .h2-cn{font-family:'Noto Serif SC',serif;font-size:clamp(18px,2vw,26px);color:rgba(232,216,168,.85);margin-bottom:28px;font-weight:300;letter-spacing:.04em}
+.cta-content > p{font-size:17px;color:rgba(255,255,255,.82);max-width:54ch;margin:0 auto 14px;line-height:1.6}
+.cta-content > p.cn{font-family:'Noto Sans SC',sans-serif;font-size:14.5px;color:rgba(255,255,255,.68);max-width:48ch;margin-bottom:40px;letter-spacing:.02em}
 .cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .cta-contacts{display:flex;gap:64px;justify-content:center;flex-wrap:wrap;margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,.18)}
 .cta-contacts .contact{text-align:center;color:#fff}
@@ -208,6 +244,7 @@ nav.top .cta:hover{background:var(--jade-deep)}
 .cta-contacts .contact .name{font-family:'Fraunces',serif;font-size:22px;font-weight:400;letter-spacing:-.005em;margin-bottom:14px;color:#fff}
 .cta-contacts .contact .line{display:block;font-size:14px;color:rgba(255,255,255,.78);line-height:1.9;letter-spacing:.02em;transition:color .2s}
 .cta-contacts .contact .line:hover{color:var(--highlight)}
+.cta-contacts .contact .line.cn{font-family:'Noto Sans SC',sans-serif;color:rgba(255,255,255,.55);font-size:12.5px}
 .btn{padding:16px 28px;border-radius:999px;font-size:14px;letter-spacing:.04em;font-weight:500;cursor:pointer;border:none;transition:all .2s;display:inline-block}
 .btn-primary{background:#fff;color:var(--ink)}
 .btn-primary:hover{background:var(--highlight)}
@@ -220,10 +257,12 @@ footer .inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px}
 footer .brand{font-family:'Fraunces',serif;font-size:24px;line-height:1.3}
 footer .brand em{font-style:italic;color:var(--highlight)}
 footer .meta{font-size:13px;color:rgba(246,241,230,.55);line-height:1.7}
+footer .meta a{color:rgba(246,241,230,.7);border-bottom:1px dotted rgba(246,241,230,.3);transition:color .2s}
+footer .meta a:hover{color:var(--highlight);border-bottom-color:var(--highlight)}
 footer .contact-block{margin-top:16px;line-height:1.85}
 footer .contact-block:first-of-type{margin-top:14px}
 footer .meta strong{color:var(--paper);font-weight:500;letter-spacing:.02em}
-footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-top:1px solid rgba(246,241,230,.1);padding-top:24px;letter-spacing:.04em}
+footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-top:1px solid rgba(246,241,230,.1);padding-top:24px;letter-spacing:.04em;line-height:1.7}
 
 /* lightbox */
 .lightbox{position:fixed;inset:0;background:rgba(15,15,12,.96);z-index:100;display:none;align-items:center;justify-content:center;padding:32px;cursor:zoom-out}
@@ -252,27 +291,25 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   nav.top ul{display:none}
   section{padding:64px 0}
   .hero{min-height:100vh}
-  .hero-top{padding:18px 20px;flex-direction:column;align-items:flex-start;gap:6px}
+  .hero-top{padding:18px 20px;flex-direction:column;align-items:flex-start;gap:10px}
   .hero-title-area{padding:32px 20px 0}
-  .hero-title-area h1{font-size:clamp(38px,9.5vw,64px);max-width:none}
+  .hero-title-area h1{font-size:clamp(36px,9.2vw,62px);max-width:none}
   .hero-bottom{padding:32px 20px;grid-template-columns:1fr;gap:24px}
   .hero-bottom .addr{text-align:left}
   .section-label{grid-template-columns:1fr;gap:16px;margin-bottom:36px}
-  .stat-strip{grid-template-columns:repeat(2,1fr)}
-  .stat-strip > div:nth-child(2n){border-right:none}
-  .stat-strip > div{border-bottom:1px solid rgba(246,241,230,.1)}
+  .listing-strip{grid-template-columns:repeat(2,1fr)}
+  .listing-strip > div:nth-child(2n){border-right:none}
+  .listing-strip > div{border-bottom:1px solid rgba(246,241,230,.1)}
   .two-col,.loc-hero{grid-template-columns:1fr;gap:32px}
-  .feature-list{grid-template-columns:repeat(2,1fr);gap:20px 24px}
+  .feature-list,.points-grid{grid-template-columns:repeat(2,1fr);gap:20px 24px}
+  .points-grid{gap:1px}
   .about-prose{column-count:1}
-  .about-lede{font-size:20px;margin-bottom:32px}
+  .about-lede{font-size:20px;margin-bottom:18px}
+  .schools-band{grid-template-columns:1fr}
   .loc-hero .img-wrap{min-height:240px;aspect-ratio:4/3}
   .loc-poi{grid-template-columns:1fr}
   .loc-poi .poi:nth-last-child(-n+2){border-bottom:1px solid var(--rule)}
   .loc-poi .poi:last-child{border-bottom:none}
-  .reviews-grid{grid-template-columns:1fr}
-  .review-summary{grid-template-columns:repeat(2,1fr)}
-  .review-summary > div:nth-child(2n){border-right:none}
-  .review-summary > div{border-bottom:1px solid rgba(246,241,230,.1)}
   .thesis-grid{grid-template-columns:1fr}
   .highlights{grid-template-columns:1fr}
   .gallery{grid-template-columns:repeat(6,1fr);grid-auto-rows:110px}
@@ -294,47 +331,68 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
     <div class="brand"><span class="dot"></span> <span><strong>744</strong> Garfield</span></div>
     <ul>
       <li><a href="#home">The Home</a></li>
+      <li><a href="#why">Why here</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#stays">Possibilities</a></li>
-      <li><a href="#reviews">Guests</a></li>
       <li><a href="#location">Location</a></li>
+      <li><a href="#paths">For buyers</a></li>
     </ul>
-    <a href="#book" class="cta">Book direct</a>
+    <a href="#tour" class="cta">Schedule a tour</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hero-bg"><img src="assets/photos/08-living-room-1.jpg" alt="Double-height living room with loft balcony"></div>
+  <div class="hero-bg"><img src="assets/photos/08-living-room-1.jpg" alt="Double-height living room"></div>
   <div class="hero-top">
-    <span>Superhost · 4.85★ · 53 reviews</span>
-    <span>Monterey Park · California</span>
+    <span class="coming-pill"><span class="pulse"></span>Coming Soon · 即将上市</span>
+    <span class="right">Monterey Park · California · 91754</span>
   </div>
   <div class="hero-title-area">
     <div>
-      <h1>A light-filled townhouse<br>in <em>Monterey Park.</em></h1>
-      <div class="chinese">蒙特利公园 · 阳光满室的城市住宅</div>
+      <h1>A move-in ready townhouse<br>in the heart of <em>Monterey Park.</em></h1>
+      <div class="chinese">蒙特利公园核心地段 · <em>整装待入</em>的三房两卫城市住宅</div>
     </div>
   </div>
   <div class="hero-bottom">
     <p class="sub">
-      Three bedrooms, a double-height living room, and a two-car garage with EV charging — newly remodeled, walking distance to Garfield Park, and a ten-minute drive to anywhere in the San Gabriel Valley.
+      <strong style="color:var(--highlight);font-weight:500;letter-spacing:.04em;text-transform:uppercase;font-size:13px;display:block;margin-bottom:14px">Move-in ready · Zero renovation needed · 拎包入住 · 无需任何装修</strong>
+      Three bedrooms, two full baths, a double-height living room, and a two-car garage with EV charging. <strong style="color:#fff">2023 full interior remodel — new floors throughout. 2025 roof replacement.</strong> Four blocks from Garfield Park, ten minutes from Pasadena, DTLA, and every corner of the San Gabriel Valley.
+      <span class="sub-cn">三房两卫 · 两层挑高客厅 · 双车位车库 + EV 充电桩 · <strong style="color:#fff">2023 全屋翻新 + 新地板 · 2025 屋顶大部分翻新</strong> · 步行可达 Garfield Park · 距帕萨迪纳、洛市中心十分钟。</span>
     </p>
     <div class="addr">
       <strong>744 S Garfield Ave</strong>
-      Monterey Park · California · 91754
+      Monterey Park · CA · 91754
     </div>
   </div>
 </header>
 
-<!-- stat strip -->
-<div class="stat-strip">
-  <div><span class="v">3 <span class="unit">BR</span></span><span class="l">Bedrooms · all queen</span></div>
-  <div><span class="v">2 <span class="unit">BA</span></span><span class="l">Full bathrooms</span></div>
-  <div><span class="v">8 <span class="unit">guests</span></span><span class="l">Sleeps comfortably</span></div>
-  <div><span class="v">2 <span class="unit">cars</span></span><span class="l">Garage + EV charger</span></div>
-  <div><span class="v">2023</span><span class="l">Newly remodeled</span></div>
-  <div><span class="v"><span class="star">★</span>4.85</span><span class="l">Superhost · 53 reviews</span></div>
+<!-- LISTING META STRIP -->
+<div class="listing-strip">
+  <div>
+    <span class="l">List price · 挂牌价</span>
+    <span class="v big price">Coming Soon</span>
+    <span class="sub">Pricing released at launch · 上市时公布</span>
+  </div>
+  <div>
+    <span class="l">Bed / Bath</span>
+    <span class="v">3 BR / 2 BA</span>
+    <span class="sub">All three bedrooms upstairs &amp; down · 三间卧室</span>
+  </div>
+  <div>
+    <span class="l">Remodeled</span>
+    <span class="v">2023 <small>+ '25 roof</small></span>
+    <span class="sub">Full interior + new roof · 全屋翻新 + 屋顶</span>
+  </div>
+  <div>
+    <span class="l">Parking</span>
+    <span class="v">2-car <small>+ EV</small></span>
+    <span class="sub">Garage · Level 2 EV charger</span>
+  </div>
+  <div>
+    <span class="l">Status</span>
+    <span class="v">Pre-market</span>
+    <span class="sub">Private tours by appointment</span>
+  </div>
 </div>
 
 <!-- HOME -->
@@ -342,42 +400,57 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   <div class="wrap">
     <div class="section-label">
       <span class="num-tag">01</span>
-      <h2>A modern townhouse,<br>tuned for <em>everyone.</em></h2>
-      <p class="lede"><strong>Newly remodeled in September 2023.</strong> Three bedrooms, two full baths, a double-height living room with a loft balcony, and a two-car garage with a Level 2 EV charger — set on a quiet stretch of South Garfield Avenue, half a block from Garfield Park.</p>
+      <h2>Move in today.<br>Renovate <em>nothing.</em><span class="cn-sub">今天拎包入住 · 零装修 · 零工程</span></h2>
+      <p class="lede"><strong>Fully remodeled in 2023</strong> — kitchen rebuilt from the studs, both baths replaced, brand-new flooring throughout. <strong>Most of the roof was redone in 2025.</strong> Three private bedrooms, a double-height living room with a loft balcony, and a two-car garage with a Level 2 EV charger. <strong>Bring boxes. Nothing else.</strong></p>
     </div>
 
     <p class="about-lede">
       <em>Step inside and the ceiling lifts.</em> A two-story living room opens above warm laminate floors and soft cream walls — light pours in through the loft railing, and the rest of the home unfolds quietly from there.
     </p>
+    <div class="lede-cn-row">
+      <p class="about-lede-cn">
+        推开门，挑高的客厅天花板瞬间打开 —— 阳光透过二层回廊洒在<strong style="color:var(--ink);font-weight:500">全新铺设的浅色地板</strong>上。这是一套<strong style="color:var(--ink);font-weight:500">真正翻新过</strong>的房子：2023 年厨房、卫浴、地板全部重做；2025 年屋顶大部分翻新完毕；厨房配<strong style="color:var(--ink);font-weight:500">全套净水系统</strong>，全屋装<strong style="color:var(--ink);font-weight:500">智能空调（Nest）</strong>，车库带 EV 充电桩。<strong style="color:var(--ink);font-weight:500">真正的拎包入住 —— 不需要任何装修、不用叫工人、不用再花一分钱大修。</strong>
+      </p>
+      <div class="photo-anchor">
+        <img src="assets/photos/04-kitchen-1.jpg" alt="Open dining and kitchen with new flooring">
+        <div class="cap">
+          <span class="kicker">New floors · Open plan</span>
+          <span class="line">Light wood throughout · cream kitchen beyond.<span class="cn-sans">全屋新地板 · 厨餐一体</span></span>
+        </div>
+      </div>
+    </div>
 
     <!-- fact strip -->
     <div class="feature-list">
-      <div class="it"><span class="lbl">Layout</span><span class="vl">3 BR / 2 BA<br>two-story townhouse</span></div>
-      <div class="it"><span class="lbl">Sleeps</span><span class="vl">Up to 8 guests<br>5 beds + 2 sofa beds</span></div>
-      <div class="it"><span class="lbl">Remodeled</span><span class="vl">September 2023<br>kitchen, baths, floors</span></div>
-      <div class="it"><span class="lbl">Parking</span><span class="vl">2-car garage<br>Level 2 EV charger</span></div>
-      <div class="it"><span class="lbl">Living room</span><span class="vl">Double-height<br>with loft balcony</span></div>
-      <div class="it"><span class="lbl">Climate</span><span class="vl">Dual-zone<br>Nest thermostats</span></div>
-      <div class="it"><span class="lbl">Entertainment</span><span class="vl">4 smart TVs<br>Prime Video logged in</span></div>
-      <div class="it"><span class="lbl">Address</span><span class="vl">744 S Garfield Ave<br>Monterey Park · 91754</span></div>
+      <div class="it"><span class="lbl">Layout</span><span class="vl">3 BR / 2 BA<br><small>two-story townhouse</small></span></div>
+      <div class="it"><span class="lbl">Interior sqft</span><span class="vl">TBD<br><small>verified at listing</small></span><span class="tbd">to be confirmed</span></div>
+      <div class="it"><span class="lbl">Interior remodel</span><span class="vl">2023<br><small>kitchen · baths · new floors</small></span></div>
+      <div class="it"><span class="lbl">Roof</span><span class="vl">2025<br><small>majority newly replaced</small></span></div>
+      <div class="it"><span class="lbl">Flooring</span><span class="vl">2023 · new<br><small>laminate · light wood tone</small></span></div>
+      <div class="it"><span class="lbl">EV charger</span><span class="vl">Level 2<br><small>in attached garage</small></span></div>
+      <div class="it"><span class="lbl">Smart climate</span><span class="vl">Dual-zone Nest<br><small>smart thermostats · app-controlled</small></span></div>
+      <div class="it"><span class="lbl">Water filtration</span><span class="vl">Whole-kitchen<br><small>full filtration system installed</small></span></div>
     </div>
 
     <!-- prose flow -->
     <div class="about-prose">
       <p>
-        The <strong>main floor</strong> centers on a tall living room with a vaulted ceiling and a wrought-iron loft railing wrapping the second story. Two upholstered sofas convert to sleepers; a jute rug and a round wood coffee table anchor the room without crowding it.
+        The <strong>main floor</strong> centers on a tall living room with a vaulted ceiling and a wrought-iron loft railing wrapping the second story. <strong>Brand-new flooring</strong> runs through the entire home — installed during the 2023 remodel, light tone, easy to clean, soft underfoot. A guest bedroom sits off the main floor for parents, visitors, or anyone who'd rather skip the stairs.
       </p>
       <p>
-        The <strong>kitchen was remodeled in September 2023</strong> — cream raised-panel cabinets, granite-look countertops, stainless appliances, and a breakfast bar with seating for two. A wide window over the sink looks out onto a small garden patch; the room opens directly to the dining area.
+        The <strong>kitchen</strong> — cream raised-panel cabinets, granite-look countertops, stainless appliances, terrazzo-pattern tile, and a breakfast bar with seating for two. A wide window over the sink looks out onto a small garden patch; the room opens directly to the dining area. A <strong>full whole-kitchen water filtration system</strong> is already installed — drinking, cooking, and rice-washing without a Brita pitcher in sight.
       </p>
       <p>
-        <strong>Three bedrooms, each with a queen bed.</strong> One on the main floor (good for guests who'd rather skip the stairs), two upstairs sharing a renovated bath with chrome fixtures and a quartz-style vanity. The upstairs primary has a writing desk and its own wall-mounted TV.
+        <strong>Three private bedrooms.</strong> One on the main floor, two upstairs sharing a renovated bath with chrome fixtures and a quartz-style vanity. The upstairs primary has a writing desk and a wall-mounted TV — easy to convert to a child's room, a home office, or a guest suite for visiting family.
       </p>
       <p>
-        <strong>The garage matters here.</strong> Street parking on this stretch of Garfield gets tight — having two covered spaces plus a Level 2 EV charger is a practical luxury, especially for guests arriving from LAX or down from the Bay.
+        <strong>The garage is the quiet superpower of this house.</strong> Street parking on this stretch of Garfield gets tight — two attached covered spaces plus a <strong>Level 2 EV charger</strong> is the kind of detail you stop appreciating until you don't have it. Mature trees on the back wall add real privacy.
       </p>
       <p>
-        <strong>Outside, a small backyard.</strong> Not the headline feature — but a quiet spot for morning coffee, and far enough from the street that you forget you're four blocks from one of the SGV's most-loved restaurant rows.
+        <strong>Outside, a small backyard</strong> — a quiet spot for morning coffee, four blocks from Garfield Park and walking distance to some of the best dim sum, hand-pulled noodles, and bubble tea in California.
+      </p>
+      <p>
+        And <strong>above all of it, a roof that was largely replaced in 2025.</strong> The single most expensive maintenance item on a townhouse — and the one most likely to surprise a first-time buyer — is already off the table for the next decade-plus.
       </p>
     </div>
 
@@ -386,9 +459,9 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
       <div class="highlight">
         <div class="img"><img src="assets/photos/09-living-room-2.jpg" alt="Living room with loft balcony"></div>
         <div class="body">
-          <span class="tag">Double-height living</span>
+          <span class="tag">Double-height · 挑高客厅</span>
           <h3>A loft balcony,<br>two stories up.</h3>
-          <p>The architectural surprise of the house. Wrought-iron railing, accent lighting, and morning light that fills the whole space.</p>
+          <p>The architectural surprise of the house. Wrought-iron railing, accent lighting, and morning light that fills the whole room.</p>
         </div>
       </div>
       <div class="highlight">
@@ -396,36 +469,88 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
         <div class="body">
           <span class="tag">Remodeled kitchen</span>
           <h3>Cream cabinets,<br>terrazzo floor.</h3>
-          <p>Reworked from the studs in September 2023. Stainless appliances, breakfast bar, and a window over the sink that looks onto the garden.</p>
+          <p>Rebuilt from the studs in September 2023. Stainless appliances, breakfast bar, garden-view window over the sink.</p>
         </div>
       </div>
       <div class="highlight">
         <div class="img"><img src="assets/photos/11-upstairs-room-2.jpg" alt="Primary bedroom upstairs"></div>
         <div class="body">
-          <span class="tag">Three queen bedrooms</span>
+          <span class="tag">Three bedrooms · 三间卧室</span>
           <h3>One down,<br>two up.</h3>
-          <p>Hotel-grade linens, blackout curtains, and a wall-mounted TV in every room. The downstairs room means no stairs if you don't want them.</p>
+          <p>The downstairs room means no stairs for guests, grandparents, or anyone who wants single-level living when they need it.</p>
         </div>
       </div>
       <div class="highlight">
         <div class="img"><img src="assets/photos/12-upstairs-bathroom.jpg" alt="Renovated bathroom"></div>
         <div class="body">
-          <span class="tag">Renovated baths</span>
-          <h3>Two full baths,<br>both updated.</h3>
-          <p>Quartz-style vanities, chrome fixtures, and storage that actually works. The kind of bathroom you don't think about — which is the point.</p>
+          <span class="tag">Two full baths · 两套完整卫浴</span>
+          <h3>Both updated,<br>both stay updated.</h3>
+          <p>Quartz-style vanities, chrome fixtures, real storage. The kind of bathroom you don't have to think about — which is the point.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- WHY HERE — selling points strip -->
+<section id="why" class="points-section" style="padding-top:64px;padding-bottom:96px">
+  <div class="wrap">
+    <div class="points-header">
+      <h3>Why this home, this block, this city.<span class="cn-sub">为什么是这套房 · 这条街 · 这座城</span></h3>
+      <p class="right">A first-time buyer's worth-it list, written from the inside out: from the front door to the freeway on-ramp.</p>
+    </div>
+    <div class="points-grid">
+      <div class="point">
+        <div class="glyph">01</div>
+        <h4>True move-in ready<span class="cn-tag">真正的拎包入住 · 零装修</span></h4>
+        <p><strong>Zero renovation needed.</strong> 2023 full interior remodel + 2025 roof replacement + EV charger + water filtration + Nest HVAC — all done. Hand over the keys, bring the boxes, start living.</p>
+      </div>
+      <div class="point">
+        <div class="glyph">02</div>
+        <h4>Walk to a real park<span class="cn-tag">步行可达 Garfield Park</span></h4>
+        <p>Garfield Park is four blocks away — open green, picnic tables, a playground. Real walkable life, not "walk to your car."</p>
+      </div>
+      <div class="point">
+        <div class="glyph">03</div>
+        <h4>Garage + EV charger<span class="cn-tag">双车位 + EV 充电</span></h4>
+        <p>Two attached covered spaces plus a Level 2 charger. Rare on this stretch of Garfield — and increasingly non-negotiable.</p>
+      </div>
+      <div class="point">
+        <div class="glyph">04</div>
+        <h4>SGV at your door<span class="cn-tag">SGV 华人生活圈</span></h4>
+        <p>99 Ranch, H Mart, dim sum and noodle houses within five minutes. The pantry of the San Gabriel Valley starts here.</p>
+      </div>
+      <div class="point">
+        <div class="glyph">05</div>
+        <h4>Commute math that works<span class="cn-tag">通勤便利</span></h4>
+        <p>DTLA in 20 minutes. Pasadena in 15. Cal State LA next door. The 10, 60, and 710 are all inside five minutes.</p>
+      </div>
+      <div class="point">
+        <div class="glyph">06</div>
+        <h4>Schools at the doorstep<span class="cn-tag">学区</span></h4>
+        <p>Served by the Montebello Unified / Alhambra Unified attendance zone (verify in offer package). Public, magnet, and language-immersion options nearby.</p>
+      </div>
+      <div class="point">
+        <div class="glyph">07</div>
+        <h4>Modern systems, all in<span class="cn-tag">智能家居 · 水电齐备</span></h4>
+        <p><strong>Dual-zone Nest</strong> smart thermostats. <strong>Whole-kitchen water filtration</strong> already installed. <strong>Level 2 EV charger</strong> in the garage. The expensive small things are already done.</p>
+      </div>
+      <div class="point">
+        <div class="glyph">08</div>
+        <h4>A long appreciation runway<span class="cn-tag">长期升值潜力</span></h4>
+        <p>Monterey Park has appreciated steadily for two decades. Demand for SGV inventory consistently outruns supply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- GALLERY -->
-<section id="gallery" style="padding-top:32px">
+<section id="gallery" style="padding-top:96px">
   <div class="wrap">
     <div class="section-label">
       <span class="num-tag">02</span>
-      <h2>Every room,<br>actually photographed.</h2>
-      <p class="lede">No staging, no renders — these are the actual rooms. Click any image to enlarge.</p>
+      <h2>Every room,<br>actually <em>photographed.</em><span class="cn-sub">每一间房间 · 真实照片</span></h2>
+      <p class="lede">No staging, no renders — these are the actual rooms as they live today. Click any image to enlarge.</p>
     </div>
 
     <div class="gallery" id="gallery-grid">
@@ -435,7 +560,7 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
       <div class="g g-c4 g-r2"><img src="assets/photos/01-dining-room.jpg" alt=""><span class="cap">Dining area</span></div>
       <div class="g g-c4 g-r2"><img src="assets/photos/04-kitchen-1.jpg" alt=""><span class="cap">Kitchen detail</span></div>
       <div class="g g-c5 g-r2"><img src="assets/photos/11-upstairs-room-2.jpg" alt=""><span class="cap">Upstairs primary</span></div>
-      <div class="g g-c4 g-r2"><img src="assets/photos/10-upstairs-room-1.jpg" alt=""><span class="cap">Upstairs bedroom + desk</span></div>
+      <div class="g g-c4 g-r2"><img src="assets/photos/10-upstairs-room-1.jpg" alt=""><span class="cap">Upstairs bedroom &amp; desk</span></div>
       <div class="g g-c3 g-r2"><img src="assets/photos/12-upstairs-bathroom.jpg" alt=""><span class="cap">Updated bath</span></div>
       <div class="g g-c4 g-r2"><img src="assets/photos/05-kitchen-2.jpg" alt=""><span class="cap">Kitchen, opposite view</span></div>
       <div class="g g-c4 g-r2"><img src="assets/photos/07-kitchen-4.jpg" alt=""><span class="cap">Kitchen detail</span></div>
@@ -443,16 +568,19 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
       <div class="g g-c8 g-r2"><img src="assets/photos/03-downstairs-room-2.jpg" alt=""><span class="cap">Downstairs bedroom · second view</span></div>
       <div class="g g-c4 g-r2"><img src="assets/photos/07-kitchen-4.jpg" alt=""><span class="cap">Kitchen window light</span></div>
     </div>
+
+    <p style="margin-top:32px;font-size:12.5px;color:var(--ink-soft);max-width:80ch;line-height:1.7">Additional exterior, garage, and outdoor photography will be added before the listing goes active. <span class="cn-sans" style="color:var(--ink-soft)">更多外观、车库、室外照片将在正式上市前补充。</span></p>
   </div>
 </section>
 
 <!-- POSSIBILITIES -->
-<section id="stays" class="poss-section">
+<section id="paths" class="poss-section">
   <div class="poss-intro">
     <span class="num-tag">03</span>
-    <h2>The kind of place that<br>works for <em>any kind of trip.</em></h2>
+    <h2>Built for the way<br>SGV families <em>actually live.</em></h2>
+    <div class="h2-cn">为 SGV 华人家庭量身打造</div>
     <p>
-      A long weekend with family. A two-week work stay between meetings. A basecamp for visiting grandparents, a wedding party, or a college tour. Three private bedrooms, a real kitchen, garage parking, and a neighborhood with everything you need within four blocks make this house unusually flexible.
+      Three private bedrooms split between two floors. A garage that fits the family car and the kid's bike. Mandarin spoken at the bubble tea shop on the corner. The house works because the neighborhood works — and that's the part you can't remodel.
     </p>
   </div>
 
@@ -460,48 +588,48 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
 
     <!-- Pillar 1 -->
     <div class="poss-cell">
-      <div class="photo"><img src="assets/photos/01-dining-room.jpg" alt="Dining room set for the family"></div>
+      <div class="photo"><img src="assets/photos/01-dining-room.jpg" alt="Dining room"></div>
       <div class="body">
-        <span class="tag">Bring the family</span>
-        <h3>Two generations,<br><em>three queen beds.</em></h3>
-        <p>Three private bedrooms — one down, two up — plus two convertible sofas in the living room. Sleeps eight without anyone being on a couch they don't want to be on.</p>
+        <span class="tag">For the first home<span class="cn">首次置业</span></span>
+        <h3>The starter house<br><em>that doesn't feel like one.</em></h3>
+        <p>Three bedrooms, two full baths, an attached garage. Move-in ready means move-in ready — no remodel debt, no deferred maintenance, no &quot;we'll fix it next year.&quot; The home you'd buy if your weekend was for living, not for projects.</p>
         <ul>
-          <li><span>Bedrooms</span><strong>3 · all queens</strong></li>
-          <li><span>Beds total</span><strong>5 + 2 sofa beds</strong></li>
-          <li><span>Pets</span><strong>2 welcomed</strong></li>
-          <li><span>Step-free room</span><strong>Yes · downstairs</strong></li>
+          <li><span>Condition</span><strong>Turnkey · 2023</strong></li>
+          <li><span>Bedrooms</span><strong>3 · split levels</strong></li>
+          <li><span>Down-payment friendly</span><strong>Townhouse</strong></li>
+          <li><span>Maintenance</span><strong>Low · HOA covers exterior</strong></li>
         </ul>
       </div>
     </div>
 
     <!-- Pillar 2 -->
     <div class="poss-cell">
-      <div class="photo"><img src="assets/photos/10-upstairs-room-1.jpg" alt="Bedroom with a desk for remote work"></div>
+      <div class="photo"><img src="assets/photos/02-downstairs-room-1.jpg" alt="Downstairs bedroom for grandparents or guests"></div>
       <div class="body">
-        <span class="tag">Stay between meetings</span>
-        <h3>A workspace<br><em>in every room.</em></h3>
-        <p>Fast Wi-Fi, a dedicated desk in the upstairs bedroom, a kitchen table that doubles as a workbench, and four TVs you can take a call away from. Built for a week of real work, not a vacation rental that pretends.</p>
+        <span class="tag">For two generations<span class="cn">多代同堂</span></span>
+        <h3>One floor for them,<br><em>one for you.</em></h3>
+        <p>A downstairs bedroom and full bath means visiting grandparents — or in-laws who stay for the month — have their own space without stairs. Two more bedrooms upstairs for the next generation, or one of them as a home office for the work-from-home parent.</p>
         <ul>
-          <li><span>Wi-Fi</span><strong>Fiber · fast</strong></li>
-          <li><span>Workspaces</span><strong>2 desks + table</strong></li>
-          <li><span>Climate</span><strong>2 Nest zones</strong></li>
-          <li><span>EV charging</span><strong>Level 2 · in garage</strong></li>
+          <li><span>Step-free room</span><strong>Yes · main floor</strong></li>
+          <li><span>Full baths</span><strong>2 · one per floor</strong></li>
+          <li><span>Kitchen</span><strong>Big enough to cook</strong></li>
+          <li><span>Guest parking</span><strong>2 covered + street</strong></li>
         </ul>
       </div>
     </div>
 
     <!-- Pillar 3 -->
     <div class="poss-cell">
-      <div class="photo"><img src="assets/photos/02-downstairs-room-1.jpg" alt="Quiet downstairs bedroom"></div>
+      <div class="photo"><img src="assets/photos/10-upstairs-room-1.jpg" alt="Bedroom with desk for remote work"></div>
       <div class="body">
-        <span class="tag">Basecamp the SGV</span>
-        <h3>Ten minutes<br><em>from everywhere.</em></h3>
-        <p>99 Ranch, H Mart, Atlantic Times Square, the San Gabriel Mission, the Huntington — all inside fifteen minutes. DTLA in twenty. Park the car in the garage and walk for dim sum, hand-pulled noodles, and bubble tea within four blocks.</p>
+        <span class="tag">For the SGV lifestyle<span class="cn">扎根 SGV</span></span>
+        <h3>Walk to <em>everything</em><br>that matters.</h3>
+        <p>Garfield Park in ten minutes on foot. 99 Ranch and H Mart in five by car. Dim sum, hot pot, hand-pulled noodles, and the best bubble tea in California — all inside the radius of a weeknight dinner. This is what you move to MP <em>for.</em></p>
         <ul>
-          <li><span>Garfield Park</span><strong>0.5 mi · 10 min walk</strong></li>
-          <li><span>99 Ranch · H Mart</span><strong>1 mi</strong></li>
-          <li><span>Downtown LA</span><strong>20 min drive</strong></li>
-          <li><span>LAX</span><strong>35 min off-peak</strong></li>
+          <li><span>Garfield Park</span><strong>0.5 mi walk</strong></li>
+          <li><span>99 Ranch · H Mart</span><strong>5 min drive</strong></li>
+          <li><span>Atlantic Times Square</span><strong>7 min</strong></li>
+          <li><span>Downtown LA</span><strong>20 min</strong></li>
         </ul>
       </div>
     </div>
@@ -509,86 +637,63 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   </div>
 </section>
 
-<!-- REVIEWS (replaces income section) -->
-<section id="reviews" class="reviews-section">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num-tag">04</span>
-      <h2>What guests<br>actually said.</h2>
-      <p class="lede">Selected from <strong>53 verified reviews</strong> on Airbnb. Two years hosting, Superhost status, 4.85 average rating. Every quote below is real and linkable.</p>
-    </div>
-
-    <div class="reviews-grid">
-      <div class="review-card">
-        <span class="stars">★★★★★</span>
-        <p class="quote">"This space is extremely comfortable and the rules of the property are very lenient. The property is very nice and comes with a garage big enough for 2 cars. This was a perfect stay."</p>
-        <div class="meta"><span class="who">Kharik</span><span>Florida City · March 2026</span></div>
-      </div>
-      <div class="review-card">
-        <span class="stars">★★★★★</span>
-        <p class="quote">"Liyuan's home was the perfect home for our family to work, play, and study while we traveled to LA. We truly enjoyed our time and hope that if we need to be in LA we'll be able to stay again."</p>
-        <div class="meta"><span class="who">Antoine</span><span>Pittsburg, CA · February 2026</span></div>
-      </div>
-      <div class="review-card">
-        <span class="stars">★★★★★</span>
-        <p class="quote">"Really enjoyed our stay here. Super responsive host and the place looked exactly like the pictures. Will definitely want to stay here again."</p>
-        <div class="meta"><span class="who">Philip</span><span>Cupertino, CA · April 2026</span></div>
-      </div>
-    </div>
-
-    <div class="review-summary">
-      <div><span class="v"><span class="star">★</span> 4.85</span><span class="l">Overall rating · 53 reviews</span></div>
-      <div><span class="v">100%</span><span class="l">Host response rate · < 1 hour</span></div>
-      <div><span class="v">2 yr</span><span class="l">Hosting · Superhost status</span></div>
-      <div><span class="v">8 guests</span><span class="l">Maximum occupancy · pet-friendly</span></div>
-    </div>
-
-    <p style="margin-top:32px;font-size:13px;color:var(--ink-soft);max-width:80ch;line-height:1.7">
-      Reviews shown above are excerpted verbatim from public Airbnb listings. The full review history and current calendar are available on <a href="https://www.airbnb.com/h/mpktownhouse" target="_blank" rel="noopener" style="color:var(--jade-deep);border-bottom:1px solid var(--jade-deep)">airbnb.com/h/mpktownhouse</a>.
-    </p>
-  </div>
-</section>
-
-<div class="rule"></div>
-
 <!-- LOCATION -->
 <section id="location">
   <div class="wrap">
     <div class="section-label">
-      <span class="num-tag">05</span>
-      <h2>Where it sits.</h2>
-      <p class="lede">Central Monterey Park — the heart of what <em>The New York Times</em> called the best place to experience Chinese food in America. Four blocks from a real park, ten minutes from the freeway.</p>
+      <span class="num-tag">04</span>
+      <h2>Where it sits.<span class="cn-sub">地理位置</span></h2>
+      <p class="lede">Central Monterey Park — the heart of what <em>The New York Times</em> called the best place to experience Chinese food in America. Quiet residential street, surrounded by everything that matters: schools, parks, groceries, freeways.</p>
     </div>
 
     <div class="loc-hero">
       <div class="img-wrap">
-        <img src="assets/photos/05-kitchen-2.jpg" alt="Kitchen window looking out onto the garden">
+        <img src="assets/photos/05-kitchen-2.jpg" alt="View through kitchen window">
         <span class="tag">San Gabriel Valley · 91754</span>
       </div>
       <div class="blurb">
         <div>
-          <h3>America's first suburban Chinatown — and one of the best places to eat in California.</h3>
-          <p>Monterey Park is consistently ranked among the best places to live in the San Gabriel Valley: safe, walkable, deeply rooted in Chinese-American culture, and home to some of the most acclaimed regional Chinese cuisine in the country. The Lunar New Year Festival draws visitors region-wide.</p>
+          <h3>America's first suburban Chinatown — still one of California's most desirable communities.<span class="cn-tag">全美首座郊区华人聚居城 · 全加州最受欢迎的华人社区之一</span></h3>
+          <p>Monterey Park has ranked among the SGV's best places to live for decades — safe, walkable, deeply rooted in Chinese-American culture, and home to some of the most acclaimed regional Chinese cuisine in the country. Home values have appreciated steadily; demand consistently outpaces inventory.</p>
         </div>
         <div class="mini-stats">
-          <div><div class="l">Median home</div><div class="v">$950K+</div></div>
+          <div><div class="l">Median home · 中位房价</div><div class="v">$950K+</div></div>
           <div><div class="l">Walk Score</div><div class="v">75 · "very"</div></div>
         </div>
       </div>
     </div>
 
-    <p class="loc-grid-title"><strong>What's nearby</strong> — favorites within easy reach</p>
+    <p class="loc-grid-title"><strong>Schools nearby</strong> · 周边学校 <span style="color:var(--ember);font-style:italic;font-size:12px;letter-spacing:.04em;font-family:'Inter',sans-serif;margin-left:8px">specific assignment to be verified in the offer package · 具体学区归属请以最终资料为准</span></p>
+    <div class="schools-band">
+      <div>
+        <span class="level">Elementary</span>
+        <span class="name">Brightwood Elementary<span class="cn-sans" style="display:block;font-size:13px;color:var(--ink-soft);margin-top:3px;font-family:'Noto Sans SC',sans-serif">Brightwood 小学</span></span>
+        <span class="meta tbd">Attendance zone to be confirmed</span>
+      </div>
+      <div>
+        <span class="level">Middle</span>
+        <span class="name">Macy Intermediate<span class="cn-sans" style="display:block;font-size:13px;color:var(--ink-soft);margin-top:3px;font-family:'Noto Sans SC',sans-serif">Macy 初中</span></span>
+        <span class="meta tbd">Attendance zone to be confirmed</span>
+      </div>
+      <div>
+        <span class="level">High</span>
+        <span class="name">Schurr / Mark Keppel High<span class="cn-sans" style="display:block;font-size:13px;color:var(--ink-soft);margin-top:3px;font-family:'Noto Sans SC',sans-serif">Schurr / Mark Keppel 高中</span></span>
+        <span class="meta tbd">Attendance zone to be confirmed</span>
+      </div>
+    </div>
+
+    <p class="loc-grid-title"><strong>What's nearby</strong> · 周边生活配套</p>
     <div class="loc-poi">
-      <div class="poi"><div class="icon">A</div><div class="name">Garfield Park<span>Open green, playground, picnic tables</span></div><div class="dist">10 min walk</div></div>
-      <div class="poi"><div class="icon">B</div><div class="name">99 Ranch Market &amp; H Mart<span>The pantry of the SGV</span></div><div class="dist">5 min drive</div></div>
-      <div class="poi"><div class="icon">C</div><div class="name">Atlantic Times Square<span>Shops, AMC, restaurants · 2 mi</span></div><div class="dist">7 min</div></div>
-      <div class="poi"><div class="icon">D</div><div class="name">Barnes Park<span>Pool, tennis, playground · 1.5 mi</span></div><div class="dist">8 min</div></div>
-      <div class="poi"><div class="icon">E</div><div class="name">San Gabriel Mission<span>1771 · CA Historical Landmark</span></div><div class="dist">15 min</div></div>
-      <div class="poi"><div class="icon">F</div><div class="name">Vincent Price Art Museum<span>ELAC campus · rotating exhibits</span></div><div class="dist">12 min</div></div>
-      <div class="poi"><div class="icon">G</div><div class="name">Huntington Library &amp; Gardens<span>Japanese, Rose, Desert gardens · 7 mi</span></div><div class="dist">20 min</div></div>
-      <div class="poi"><div class="icon">H</div><div class="name">Downtown LA</div><div class="dist">20 min</div></div>
-      <div class="poi"><div class="icon">I</div><div class="name">Griffith Observatory<span>LA skyline · Hollywood sign view</span></div><div class="dist">30 min</div></div>
-      <div class="poi"><div class="icon">J</div><div class="name">LAX</div><div class="dist">35–55 min</div></div>
+      <div class="poi"><div class="icon">A</div><div class="name">Garfield Park<span>Playground, picnic, open green</span><span class="cn">街角公园 · 步行十分钟</span></div><div class="dist">0.5 mi · walk</div></div>
+      <div class="poi"><div class="icon">B</div><div class="name">99 Ranch Market &amp; H Mart<span>The pantry of the SGV</span><span class="cn">大华超市 · H Mart 韩国超市</span></div><div class="dist">5 min</div></div>
+      <div class="poi"><div class="icon">C</div><div class="name">Atlantic Times Square<span>Dining, AMC, shops · 2 mi</span><span class="cn">亚特兰提斯广场</span></div><div class="dist">7 min</div></div>
+      <div class="poi"><div class="icon">D</div><div class="name">Cal State LA · ELAC<span>Universities &amp; community college</span><span class="cn">加州州立洛杉矶分校 · 东洛社区学院</span></div><div class="dist">10 min</div></div>
+      <div class="poi"><div class="icon">E</div><div class="name">Pasadena (Old Town)<span>Dining, shops, Caltech</span><span class="cn">帕萨迪纳老城</span></div><div class="dist">15 min</div></div>
+      <div class="poi"><div class="icon">F</div><div class="name">Downtown Los Angeles<span>Business district, Union Station</span><span class="cn">洛杉矶市中心</span></div><div class="dist">20 min</div></div>
+      <div class="poi"><div class="icon">G</div><div class="name">San Gabriel · Alhambra<span>Valley Blvd · 626 food scene</span><span class="cn">圣盖博 · 阿罕布拉 · Valley 大道</span></div><div class="dist">8–12 min</div></div>
+      <div class="poi"><div class="icon">H</div><div class="name">Huntington Library &amp; Gardens<span>Japanese, Rose, Desert gardens</span><span class="cn">汉廷顿图书馆与花园</span></div><div class="dist">20 min</div></div>
+      <div class="poi"><div class="icon">I</div><div class="name">LAX International Airport<span class="cn">洛杉矶国际机场</span></div><div class="dist">35–55 min</div></div>
+      <div class="poi"><div class="icon">J</div><div class="name">I-10 / I-710 / 60 freeway access<span class="cn">三条主要高速入口</span></div><div class="dist">5 min</div></div>
     </div>
   </div>
 </section>
@@ -597,54 +702,52 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
 <section class="thesis-section">
   <div class="wrap">
     <div class="section-label">
-      <span class="num-tag">06</span>
-      <h2>Three ways<br>to <em>stay or own.</em></h2>
-      <p class="lede">The property serves equally well as a short stay, an extended remote-work landing, or a long-term hold in a steadily appreciating market. Pick the path that matches you.</p>
+      <span class="num-tag">05</span>
+      <h2>Three ways<br>to <em>make this home.</em><span class="cn-sub">三种入住方式 · 谁适合这套房</span></h2>
+      <p class="lede">A turnkey townhouse in central MP suits more than one kind of family. Here's how the strongest cases line up.</p>
     </div>
 
     <div class="thesis-grid">
       <div class="thesis-card">
-        <span class="badge">Path A · Book direct</span>
-        <h4>Skip the platform fee.</h4>
-        <p>Same house, same Superhost, same calendar — booked direct. <strong>10–15% less than Airbnb</strong> on most dates, with the same cleaning, the same Liyuan responding within an hour, and the same property you see on the public listing.</p>
+        <span class="badge">Path A · First home</span>
+        <h4>Move in this summer.<br><em>Renovate nothing.</em><span class="cn-tag">今夏拎包入住 · 零装修</span></h4>
+        <p>Three bedrooms means the second child has a room. Two full baths means morning traffic isn't a fight. The garage holds the EV, the bikes, and the Costco run. <strong>Bring boxes. Nothing else.</strong> No contractor calls, no permit pulls, no weekends lost to drywall.</p>
       </div>
       <div class="thesis-card">
-        <span class="badge">Path B · Long stay</span>
-        <h4>Settle in for a month.</h4>
-        <p>Monthly rates available for stays of <strong>28+ nights</strong> — visiting professors, traveling executives, families between homes. Two desks, fast Wi-Fi, walkable groceries, garage EV charging, and a quiet street. Ask about furnished long-term pricing.</p>
+        <span class="badge">Path B · Multi-generational</span>
+        <h4>One front door,<br><em>three generations.</em><span class="cn-tag">多代同堂 · 一门三代</span></h4>
+        <p>The downstairs bedroom with a full bath next door is the right answer for visiting grandparents — or grandparents who decide to stay. Two more bedrooms upstairs for the family, plus a quiet desk corner for the work-from-home parent.</p>
       </div>
       <div class="thesis-card">
-        <span class="badge">Path C · Own this property</span>
-        <h4>Or buy the house.</h4>
-        <p>The owner will consider qualified offers. <strong>Townhouse, 3 BR / 2 BA, newly remodeled, with a two-year operating history as a Superhost-rated short-term rental.</strong> Income statements, calendar, and inspection records under NDA.</p>
+        <span class="badge">Path C · Long hold</span>
+        <h4>A 10-year hold in a<br><em>steady-appreciation market.</em><span class="cn-tag">长期持有 · MP 升值稳定</span></h4>
+        <p>MP demand consistently outruns inventory. The 2023 interior remodel <strong>and the 2025 roof</strong> mean almost nothing major to do for the first decade. A textbook SGV asset for buyers thinking past their first house.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section id="book" class="cta-section">
+<section id="tour" class="cta-section">
   <div class="cta-bg"><img src="assets/photos/09-living-room-2.jpg" alt=""></div>
   <div class="cta-content">
-    <p class="kicker" style="margin-bottom:18px;color:var(--highlight)">Book direct · ask anything</p>
-    <h2>Stay where guests<br><em>keep coming back.</em></h2>
-    <p>Reach Liyuan directly for booking, monthly stays, ownership inquiries, or anything in between. Most messages get a reply within an hour.</p>
+    <div class="coming-pill"><span style="width:7px;height:7px;background:#1d1408;border-radius:50%;display:inline-block"></span>Coming Soon · 即将上市</div>
+    <h2>Move in this summer.<br><em>Renovate nothing.</em></h2>
+    <div class="h2-cn">今夏拎包入住 · 零装修 · 零工程</div>
+    <p>A 2023 interior remodel and a 2025 roof replacement mean the expensive maintenance has already been handled. Private walkthroughs are available by appointment in advance of the public launch — pre-launch buyers receive the full listing package the day it's released.</p>
+    <p class="cn">2023 全屋翻新 + 2025 屋顶翻新，所有"大件"已经做完。正式上市前可预约一对一私人看房，预登记的买家在公开上市当天即获得完整资料包。</p>
     <div class="cta-buttons">
-      <a class="btn btn-primary" href="https://www.airbnb.com/h/mpktownhouse" target="_blank" rel="noopener">Check availability on Airbnb →</a>
-      <a class="btn btn-secondary" href="#contact-card">Speak with the host</a>
+      <a class="btn btn-primary" data-em="Maxwang|irnrealty.com" data-sub="744 S Garfield — Private Tour Request" href="#">Schedule a private tour →</a>
+      <a class="btn btn-secondary" href="#contact-card">Get notified at launch</a>
     </div>
 
     <div id="contact-card" class="cta-contacts">
       <div class="contact">
-        <div class="role">Host · Superhost</div>
-        <div class="name">Liyuan</div>
-        <a data-em="sunliyuan8|gmail.com" data-sub="744 S Garfield Ave — Inquiry" href="#" class="line em-line"></a>
-        <span class="line">Responds in &lt; 1 hour</span>
-      </div>
-      <div class="contact">
-        <div class="role">Co-host</div>
-        <div class="name">Zhuochen</div>
-        <a href="https://www.airbnb.com/h/mpktownhouse" target="_blank" rel="noopener" class="line">Message via Airbnb →</a>
+        <div class="role">Listing agent · 挂牌经纪人</div>
+        <div class="name">Max Wang</div>
+        <a data-em="Maxwang|irnrealty.com" data-sub="744 S Garfield — Tour Request" href="#" class="line em-line"></a>
+        <a href="tel:+16266628636" class="line">(626) 662-8636</a>
+        <span class="line cn">IRN Realty · 中文 / English 均可</span>
       </div>
     </div>
   </div>
@@ -654,26 +757,26 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   <div class="wrap inner">
     <div>
       <div class="brand"><strong>744</strong> S Garfield<br><em>Monterey Park</em></div>
-      <p class="meta" style="margin-top:18px">A newly remodeled<br>three-bedroom townhouse<br>in the heart of the SGV.</p>
+      <p class="meta" style="margin-top:18px">A newly remodeled<br>three-bedroom townhouse<br>in central Monterey Park.<br><span class="cn-sans" style="color:rgba(246,241,230,.55)">蒙特利公园 · 三房翻新城市住宅</span></p>
     </div>
     <div>
       <div class="meta">
-        <strong>Stay or inquire</strong>
+        <strong>Listing inquiries · 联络方式</strong>
         <div class="contact-block">
-          Liyuan · Host<br>
-          <span data-em="sunliyuan8|gmail.com" class="em-text"></span><br>
-          Responds within an hour
-        </div>
-        <div class="contact-block">
-          <a href="https://www.airbnb.com/h/mpktownhouse" target="_blank" rel="noopener" style="color:var(--highlight);border-bottom:1px solid rgba(232,216,168,.4);padding-bottom:1px">airbnb.com/h/mpktownhouse</a>
+          <strong style="color:var(--paper);font-weight:500">Max Wang</strong><br>
+          Listing agent · <span class="cn-sans">挂牌经纪人</span><br>
+          <a data-em="Maxwang|irnrealty.com" data-sub="744 S Garfield — Inquiry" href="#" class="em-line"></a><br>
+          <a href="tel:+16266628636">(626) 662-8636</a><br>
+          <span class="cn-sans" style="color:rgba(246,241,230,.45)">IRN Realty · 中文 / English 均可</span>
         </div>
       </div>
     </div>
     <div>
-      <div class="meta"><strong>744 S Garfield Avenue</strong><br>Monterey Park, CA 91754<br>Los Angeles County<br><br>Superhost · 2 years hosting<br>4.85★ · 53 verified reviews</div>
+      <div class="meta"><strong>744 S Garfield Avenue</strong><br>Monterey Park, CA 91754<br>Los Angeles County<br><br><strong style="color:var(--coming-soon)">Coming Soon</strong><br>Listing details · pricing · disclosures<br>released at public launch.<br><span class="cn-sans">即将上市 · 定价与披露资料随后公布</span></div>
     </div>
     <div class="legal" style="grid-column:1/-1">
-      © 2026 · Information believed accurate but not warranted. Direct booking inquiries fulfilled by the property owner. Review excerpts are taken verbatim from public Airbnb reviews. Photography is of the actual property. Pricing and availability subject to change.
+      © 2026 · Information believed accurate but not warranted. All facts, including square footage, lot size, year built, HOA terms, and school-attendance zones, to be verified by buyer prior to offer. Pricing released at listing launch. This is a private pre-market presentation; this site is not a public offering of real estate.<br>
+      <span class="cn-sans" style="color:rgba(246,241,230,.4)">本网站所载信息以诚信原则提供，但不构成担保。所有房产数据 (含面积、地块、建造年份、HOA、学区归属) 请以买方独立核实及最终披露资料为准。本页为上市前私人预览，非公开销售要约。</span>
     </div>
   </div>
 </footer>
@@ -689,8 +792,8 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   <div class="group">
     <div class="label">Accent color</div>
     <div class="swatch-row" id="accent-swatches">
-      <span class="swatch on" data-accent="jade" style="background:#4a6b56" title="Sage jade (default)"></span>
-      <span class="swatch" data-accent="terra" style="background:#a4502a" title="Terracotta (Jeanie Lane original)"></span>
+      <span class="swatch on" data-accent="jade" style="background:#4a6b56" title="Sage jade"></span>
+      <span class="swatch" data-accent="terra" style="background:#a4502a" title="Terracotta"></span>
       <span class="swatch" data-accent="indigo" style="background:#3a4d6b" title="Cool indigo"></span>
       <span class="swatch" data-accent="rust" style="background:#a3543a" title="Warm rust"></span>
     </div>
@@ -706,18 +809,18 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   </div>
 
   <div class="group">
-    <div class="label">Chinese title</div>
-    <div class="seg" id="cn-seg">
-      <button data-cn="0">Hide</button>
-      <button class="on" data-cn="1">Show</button>
+    <div class="label">Listing status</div>
+    <div class="seg" id="status-seg">
+      <button class="on" data-status="coming">Coming Soon</button>
+      <button data-status="active">Active</button>
     </div>
   </div>
 
   <div class="group">
-    <div class="label">CTA mode</div>
-    <div class="seg" id="mode-seg">
-      <button class="on" data-mode="stay">Stay</button>
-      <button data-mode="sale">For sale</button>
+    <div class="label">Chinese accents</div>
+    <div class="seg" id="cn-seg">
+      <button data-cn="0">Hide</button>
+      <button class="on" data-cn="1">Show</button>
     </div>
   </div>
 </div>
@@ -732,7 +835,7 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
     if (el.tagName === 'A') {
       const sub = el.getAttribute('data-sub');
       el.href = 'mailto:' + emails + (sub ? '?subject=' + encodeURIComponent(sub) : '');
-      if (el.classList.contains('em-line')) el.textContent = emails;
+      if (el.classList.contains('em-line') && !el.textContent.trim()) el.textContent = emails;
     } else {
       el.textContent = emails;
     }
@@ -755,21 +858,16 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
 })();
 
-// ===== tweaks: edit-mode protocol =====
+// ===== tweaks =====
 (function(){
   const panel = document.getElementById('tweaks');
-
-  // 1) listen FIRST
   window.addEventListener('message', (e) => {
     const t = e.data && e.data.type;
     if (t === '__activate_edit_mode') panel.classList.add('on');
     if (t === '__deactivate_edit_mode') panel.classList.remove('on');
   });
-
-  // 2) THEN announce
   try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch(e){}
 
-  // ----- ACCENT COLOR -----
   const accents = {
     jade:   { jade:'#4a6b56', jadeDeep:'#2f4a3c', highlight:'#e8d8a8' },
     terra:  { jade:'#a4502a', jadeDeep:'#7a3318', highlight:'#e8c98f' },
@@ -787,7 +885,6 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
     });
   });
 
-  // ----- HERO PHOTO -----
   const heroMap = {
     '08': 'assets/photos/08-living-room-1.jpg',
     '06': 'assets/photos/06-kitchen-3.jpg',
@@ -801,45 +898,41 @@ footer .legal{font-size:11px;color:rgba(246,241,230,.4);margin-top:48px;border-t
     });
   });
 
-  // ----- CHINESE TITLE -----
+  // listing status
+  document.querySelectorAll('#status-seg button').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#status-seg button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      const isActive = b.dataset.status === 'active';
+      document.querySelectorAll('.coming-pill').forEach(p => {
+        if (isActive) {
+          p.style.background = 'var(--jade)';
+          p.style.color = '#fff';
+          p.innerHTML = p.innerHTML.replace('Coming Soon · 即将上市', 'Active Listing · 已上市');
+        } else {
+          p.style.background = 'var(--coming-soon)';
+          p.style.color = '#1d1408';
+          p.innerHTML = p.innerHTML.replace('Active Listing · 已上市', 'Coming Soon · 即将上市');
+        }
+      });
+      const priceCell = document.querySelector('.listing-strip .v.price');
+      if (priceCell) priceCell.textContent = isActive ? 'On request' : 'Coming Soon';
+      const statusCell = document.querySelectorAll('.listing-strip .v')[4];
+      if (statusCell) statusCell.textContent = isActive ? 'Active' : 'Pre-market';
+    });
+  });
+
+  // chinese accents
   document.querySelectorAll('#cn-seg button').forEach(b => {
     b.addEventListener('click', () => {
       document.querySelectorAll('#cn-seg button').forEach(x => x.classList.remove('on'));
       b.classList.add('on');
-      const cn = document.querySelector('.hero-title-area .chinese');
-      if (b.dataset.cn === '1') cn.classList.add('on');
-      else cn.classList.remove('on');
+      const show = b.dataset.cn === '1';
+      document.querySelectorAll('.cn, .cn-sans, .cn-sub, .cn-tag, .sub-cn, .about-lede-cn, .chinese, .h2-cn').forEach(el => {
+        el.style.display = show ? '' : 'none';
+      });
     });
   });
-
-  // ----- MODE (stay vs sale) -----
-  document.querySelectorAll('#mode-seg button').forEach(b => {
-    b.addEventListener('click', () => {
-      document.querySelectorAll('#mode-seg button').forEach(x => x.classList.remove('on'));
-      b.classList.add('on');
-      const mode = b.dataset.mode;
-      // Nav CTA
-      const navCta = document.querySelector('nav.top .cta');
-      // Primary CTA button
-      const ctaBtn = document.querySelector('.cta-buttons .btn-primary');
-      if (mode === 'sale') {
-        navCta.textContent = 'Request offer info';
-        navCta.setAttribute('href', '#contact-card');
-        ctaBtn.textContent = 'Request data room';
-        ctaBtn.setAttribute('href', 'mailto:sunliyuan8' + String.fromCharCode(64) + 'gmail.com?subject=' + encodeURIComponent('744 S Garfield — Purchase Inquiry'));
-        ctaBtn.removeAttribute('target');
-      } else {
-        navCta.textContent = 'Book direct';
-        navCta.setAttribute('href', '#book');
-        ctaBtn.textContent = 'Check availability on Airbnb →';
-        ctaBtn.setAttribute('href', 'https://www.airbnb.com/h/mpktownhouse');
-        ctaBtn.setAttribute('target', '_blank');
-      }
-    });
-  });
-
-  // initial Chinese state: visible (matches default .on button)
-  document.querySelector('.hero-title-area .chinese').classList.add('on');
 })();
 </script>
 
